@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verifying Local Edits Under Factual and Editorial Constraints</title>
+  <meta name="description" content="Research preprint by Achintya Raya Polavarapu and Ahmedijad Youssef on factual and editorial verification of local text edits.">
+  <link rel="canonical" href="https://aytn06.github.io/verifying-local-edits/">
+  <meta name="citation_title" content="Verifying Local Edits Under Factual and Editorial Constraints">
+  <meta name="citation_author" content="Achintya Raya Polavarapu">
+  <meta name="citation_author" content="Ahmedijad Youssef">
+  <meta name="citation_publication_date" content="2026/10/09">
+  <meta name="citation_pdf_url" content="https://aytn06.github.io/verifying-local-edits/final_paper.pdf">
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: #222;
+      background: #fff;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.0625rem;
+      line-height: 1.65;
+    }
+    main { max-width: 52rem; margin: 0 auto; padding: 3rem 1.5rem 3.5rem; }
+    .status, .resources, .affiliation, .scope {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .status { margin: 0 0 1rem; color: #555; font-size: .875rem; }
+    h1 { margin: 0 0 1.5rem; font-size: clamp(1.8rem, 4.4vw, 2.45rem); line-height: 1.2; font-weight: 600; }
+    .authors { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 2rem; margin: 0 0 1.8rem; }
+    .author { margin: 0; }
+    .name { display: block; margin-bottom: .25rem; font-size: 1.125rem; }
+    .affiliation { display: block; font-size: .875rem; line-height: 1.55; color: #454545; }
+    .resources { display: flex; flex-wrap: wrap; gap: .6rem 1.6rem; padding: .8rem 0; margin: 0; border-top: 1px solid #cbd0d5; border-bottom: 1px solid #cbd0d5; font-size: .95rem; }
+    a { color: #174775; text-underline-offset: .17em; text-decoration-thickness: 1px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid #174775; outline-offset: 4px; border-radius: 1px; }
+    section { margin-top: 1.8rem; }
+    h2 { font-size: 1.25rem; line-height: 1.35; margin: 0 0 .75rem; }
+    p { margin: 0; }
+    .scope { border-top: 1px solid #cbd0d5; padding-top: 1.25rem; font-size: .875rem; line-height: 1.6; color: #454545; }
+    .scope h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.125rem; color: #222; }
+    @media (max-width: 36rem) {
+      main { padding: 1.8rem 1.1rem 2.5rem; }
+      .authors { grid-template-columns: 1fr; gap: 1rem; }
+    }
+    @media print {
+      main { max-width: none; padding: 0; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article aria-labelledby="paper-title">
+      <header>
+        <p class="status">Research preprint · Posted <time datetime="2026-10-09">9 October 2026</time></p>
+        <h1 id="paper-title">Verifying Local Edits Under Factual and Editorial Constraints</h1>
+        <div class="authors" aria-label="Authors and affiliations">
+          <p class="author">
+            <span class="name">Achintya Raya Polavarapu</span>
+            <span class="affiliation">Georgia Institute of Technology<br>Atlanta, Georgia, United States</span>
+          </p>
+          <p class="author">
+            <span class="name">Ahmedijad Youssef</span>
+            <span class="affiliation">Contextual Computing Lab<br>Georgia Institute of Technology<br>Atlanta, Georgia, United States</span>
+          </p>
+        </div>
+        <nav class="resources" aria-label="Paper and reproducibility resources">
+          <a href="final_paper.pdf" type="application/pdf">Read the paper (PDF)</a>
+          <a href="https://github.com/aytn06/verifying-local-edits">Code and reproducibility materials</a>
+        </nav>
+      </header>
+      <section aria-labelledby="abstract-heading">
+        <h2 id="abstract-heading">Abstract</h2>
+        <p id="abstract">A local edit can change the meaning of unchanged text, and a factual revision can still violate an editorial rule. We study when a verifier can accept an edited document and what information would justify checking less. A controlled benchmark separates candidate context, factual support, and editorial compliance. Complete context reduces factual errors admitted by the 8B verifier, while the 1.7B joint verifier rejects every constructed error but also 26/32 valid controls. In an initial 100-document SummEdits test, an edit-focused prompt achieves 82% accuracy versus 75% for a same-information baseline: invalid acceptance falls from 22/50 to 14/50, with valid rejection rising from 3/50 to 4/50. A two-stage claim-extraction ablation matches development accuracy at higher cost. A separate test on 50 unused source pairs adds a detailed-checklist control and a second model family. Qwen3-8B reaches 83% versus 80% for the checklist; the three-point difference remains uncertain (95% source-cluster interval [0,7]). Llama-3.2-3B instead reaches 51% versus 61% and rejects 49/50 valid edits. Thus edit-focused prompting, which is not a new algorithm, does not show a consistent advantage across the tested checkpoints. Separately, we characterize the exact minimum worst-case expected rechecking cost under perfect claim queries, assumed nested-scope miss bounds, and distinct valid-retention and false-acceptance constraints. The experiments do not establish those oracle assumptions. The results concern fixed checkpoints and selected benchmarks, not natural editorial validity or downstream benefit.</p>
+      </section>
+      <section class="scope" aria-labelledby="scope-heading">
+        <h2 id="scope-heading">Scope and limitations</h2>
+        <p>No new human ratings were collected, and the prepared blinded human-review batch remains unannotated. The theoretical results assume perfect claim queries and nested-scope miss bounds; the experiments do not establish those assumptions.</p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

@@ -1,0 +1,200 @@
+[
+  {
+    "fixture_id": "b01_c01:whole",
+    "row": {
+      "source": "Mira searches for missing navigation charts at the old harbor.\nOren watches sealed cargo crates at the old harbor.\nTavi helps Mira search for missing navigation charts. Tavi does not help Oren watch sealed cargo crates.\nMira notices a mysterious sealed envelope.\nMira and Tavi share a warm joke.\nThe central storyline follows Mira's work (Mira searches for missing navigation charts); its declared theme is relationships. The suspense mystery scene and the comedy warmth scene are each minor subplots.\nExplicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions.",
+      "original": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work.",
+      "edited": "Mira searches for missing navigation charts with Tavi's help. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work."
+    },
+    "condition": "whole",
+    "expected_messages_sha256": "642c042911a9d125412a05b5e4413a4f861c36bd9fa4254667ea2f17b835b0ad",
+    "expected_rendered_sha256": "aba22e8131cff13b5c4ca53e35df3eb6dded633ae094d72ff80effe73b289b24"
+  },
+  {
+    "fixture_id": "b01_c01:matched",
+    "row": {
+      "source": "Mira searches for missing navigation charts at the old harbor.\nOren watches sealed cargo crates at the old harbor.\nTavi helps Mira search for missing navigation charts. Tavi does not help Oren watch sealed cargo crates.\nMira notices a mysterious sealed envelope.\nMira and Tavi share a warm joke.\nThe central storyline follows Mira's work (Mira searches for missing navigation charts); its declared theme is relationships. The suspense mystery scene and the comedy warmth scene are each minor subplots.\nExplicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions.",
+      "original": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work.",
+      "edited": "Mira searches for missing navigation charts with Tavi's help. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work."
+    },
+    "condition": "matched",
+    "expected_messages_sha256": "999618dd96b539ea08e9c06e15139333e93a81af9d22091cdb0e5e7b576e6d53",
+    "expected_rendered_sha256": "1593b707f88beb594914f6a6471409f53ac78300daf0b7a2d4a7af9aa2952f07"
+  },
+  {
+    "fixture_id": "b01_c01:delta_prompt",
+    "row": {
+      "source": "Mira searches for missing navigation charts at the old harbor.\nOren watches sealed cargo crates at the old harbor.\nTavi helps Mira search for missing navigation charts. Tavi does not help Oren watch sealed cargo crates.\nMira notices a mysterious sealed envelope.\nMira and Tavi share a warm joke.\nThe central storyline follows Mira's work (Mira searches for missing navigation charts); its declared theme is relationships. The suspense mystery scene and the comedy warmth scene are each minor subplots.\nExplicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions.",
+      "original": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work.",
+      "edited": "Mira searches for missing navigation charts with Tavi's help. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work."
+    },
+    "condition": "delta_prompt",
+    "expected_messages_sha256": "cf71beb1950a464cc71a1a68bb0f39316da29fa9b0d1427bc1f9f2452cdad7b3",
+    "expected_rendered_sha256": "c25240c1e4cc878d3ebdfa3fc93f4a664eade53f4a3d72a8ce14c3444fdb280e"
+  },
+  {
+    "fixture_id": "b01_c02:whole",
+    "row": {
+      "source": "Mira searches for missing navigation charts at the old harbor.\nOren watches sealed cargo crates at the old harbor.\nTavi helps Mira search for missing navigation charts. Tavi does not help Oren watch sealed cargo crates.\nMira notices a mysterious sealed envelope.\nMira and Tavi share a warm joke.\nThe central storyline follows Mira's work (Mira searches for missing navigation charts); its declared theme is relationships. The suspense mystery scene and the comedy warmth scene are each minor subplots.\nExplicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions.",
+      "original": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work.",
+      "edited": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. Mira notices a mysterious sealed envelope."
+    },
+    "condition": "whole",
+    "expected_messages_sha256": "29f779efb17a5d8e8a883cd154b3a14cf57b7da5451ef6b8a3ddbfda2a24b611",
+    "expected_rendered_sha256": "7a2e1215e535dc90369dfb99a2607df5799bc493c170d43664319c79397014c8"
+  },
+  {
+    "fixture_id": "b01_c02:matched",
+    "row": {
+      "source": "Mira searches for missing navigation charts at the old harbor.\nOren watches sealed cargo crates at the old harbor.\nTavi helps Mira search for missing navigation charts. Tavi does not help Oren watch sealed cargo crates.\nMira notices a mysterious sealed envelope.\nMira and Tavi share a warm joke.\nThe central storyline follows Mira's work (Mira searches for missing navigation charts); its declared theme is relationships. The suspense mystery scene and the comedy warmth scene are each minor subplots.\nExplicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions.",
+      "original": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work.",
+      "edited": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. Mira notices a mysterious sealed envelope."
+    },
+    "condition": "matched",
+    "expected_messages_sha256": "d315013bf6f0d74d785f90008409f89799fdca5c652ac1a7de2c4cdc9cda5d91",
+    "expected_rendered_sha256": "1beecfbb21e7664cd37176e3958dec161cf74f38b2ddf1192e6dab8bffd0209b"
+  },
+  {
+    "fixture_id": "b01_c02:delta_prompt",
+    "row": {
+      "source": "Mira searches for missing navigation charts at the old harbor.\nOren watches sealed cargo crates at the old harbor.\nTavi helps Mira search for missing navigation charts. Tavi does not help Oren watch sealed cargo crates.\nMira notices a mysterious sealed envelope.\nMira and Tavi share a warm joke.\nThe central storyline follows Mira's work (Mira searches for missing navigation charts); its declared theme is relationships. The suspense mystery scene and the comedy warmth scene are each minor subplots.\nExplicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions.",
+      "original": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work.",
+      "edited": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. Mira notices a mysterious sealed envelope."
+    },
+    "condition": "delta_prompt",
+    "expected_messages_sha256": "a39b55d2cbd678660e718d50151e0faa0f231279e1109d5d1de6e31c922cdc64",
+    "expected_rendered_sha256": "790d91f7b887c22d3080dcbc767acc6de4b550d2af0aa35d09a8d387b0acef3a"
+  },
+  {
+    "fixture_id": "b01_c03:whole",
+    "row": {
+      "source": "Mira searches for missing navigation charts at the old harbor.\nOren watches sealed cargo crates at the old harbor.\nTavi helps Mira search for missing navigation charts. Tavi does not help Oren watch sealed cargo crates.\nMira notices a mysterious sealed envelope.\nMira and Tavi share a warm joke.\nThe central storyline follows Mira's work (Mira searches for missing navigation charts); its declared theme is relationships. The suspense mystery scene and the comedy warmth scene are each minor subplots.\nExplicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions.",
+      "original": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work.",
+      "edited": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates with Tavi's help. The main storyline follows Mira's work."
+    },
+    "condition": "whole",
+    "expected_messages_sha256": "ac024c678da3d103f8ddf590cf0dc3a6c2f91a278d21f283faa529fcc3f5389e",
+    "expected_rendered_sha256": "11c9189a890340af4138952bb207b855998d1fcaee2015c89ce7b78fb8ccaf2e"
+  },
+  {
+    "fixture_id": "b01_c03:matched",
+    "row": {
+      "source": "Mira searches for missing navigation charts at the old harbor.\nOren watches sealed cargo crates at the old harbor.\nTavi helps Mira search for missing navigation charts. Tavi does not help Oren watch sealed cargo crates.\nMira notices a mysterious sealed envelope.\nMira and Tavi share a warm joke.\nThe central storyline follows Mira's work (Mira searches for missing navigation charts); its declared theme is relationships. The suspense mystery scene and the comedy warmth scene are each minor subplots.\nExplicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions.",
+      "original": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work.",
+      "edited": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates with Tavi's help. The main storyline follows Mira's work."
+    },
+    "condition": "matched",
+    "expected_messages_sha256": "a03f308e251410568a067740a58d2d9191992b2349c5df50a9445b7731ab7983",
+    "expected_rendered_sha256": "264de114bf1ea2a5ba8503e274b9105d2183eef2df38cc25c15de7ede40a7ca2"
+  },
+  {
+    "fixture_id": "b01_c03:delta_prompt",
+    "row": {
+      "source": "Mira searches for missing navigation charts at the old harbor.\nOren watches sealed cargo crates at the old harbor.\nTavi helps Mira search for missing navigation charts. Tavi does not help Oren watch sealed cargo crates.\nMira notices a mysterious sealed envelope.\nMira and Tavi share a warm joke.\nThe central storyline follows Mira's work (Mira searches for missing navigation charts); its declared theme is relationships. The suspense mystery scene and the comedy warmth scene are each minor subplots.\nExplicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions.",
+      "original": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work.",
+      "edited": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates with Tavi's help. The main storyline follows Mira's work."
+    },
+    "condition": "delta_prompt",
+    "expected_messages_sha256": "ed09d58853b7ae086d76049161cb94da07991a9b0078ea39c8b867daed63f8b0",
+    "expected_rendered_sha256": "71d9f8ac18047337b6268288503a366cda003c1dcdef71a9d0b67717aba73f94"
+  },
+  {
+    "fixture_id": "b01_c04:whole",
+    "row": {
+      "source": "Mira searches for missing navigation charts at the old harbor.\nOren watches sealed cargo crates at the old harbor.\nTavi helps Mira search for missing navigation charts. Tavi does not help Oren watch sealed cargo crates.\nMira notices a mysterious sealed envelope.\nMira and Tavi share a warm joke.\nThe central storyline follows Mira's work (Mira searches for missing navigation charts); its declared theme is relationships. The suspense mystery scene and the comedy warmth scene are each minor subplots.\nExplicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions.",
+      "original": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work.",
+      "edited": "Mira does not search for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work."
+    },
+    "condition": "whole",
+    "expected_messages_sha256": "0b51c5cdfde4f5b68bd1be232164f764bffbb616315b9f5e85811d8517bd1cd6",
+    "expected_rendered_sha256": "5a616b74c51713b77ab63c445a711451baf88c1a0b7489bd210a3e67138373ac"
+  },
+  {
+    "fixture_id": "b01_c04:matched",
+    "row": {
+      "source": "Mira searches for missing navigation charts at the old harbor.\nOren watches sealed cargo crates at the old harbor.\nTavi helps Mira search for missing navigation charts. Tavi does not help Oren watch sealed cargo crates.\nMira notices a mysterious sealed envelope.\nMira and Tavi share a warm joke.\nThe central storyline follows Mira's work (Mira searches for missing navigation charts); its declared theme is relationships. The suspense mystery scene and the comedy warmth scene are each minor subplots.\nExplicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions.",
+      "original": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work.",
+      "edited": "Mira does not search for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work."
+    },
+    "condition": "matched",
+    "expected_messages_sha256": "4746c17395c8ed6fed605527d8dfe6ca643da7973628eead26037cfde1945d8c",
+    "expected_rendered_sha256": "a47d5433bb033630b2f32e39a2ba3814f04120bc84a54a73d014518be13f2390"
+  },
+  {
+    "fixture_id": "b01_c04:delta_prompt",
+    "row": {
+      "source": "Mira searches for missing navigation charts at the old harbor.\nOren watches sealed cargo crates at the old harbor.\nTavi helps Mira search for missing navigation charts. Tavi does not help Oren watch sealed cargo crates.\nMira notices a mysterious sealed envelope.\nMira and Tavi share a warm joke.\nThe central storyline follows Mira's work (Mira searches for missing navigation charts); its declared theme is relationships. The suspense mystery scene and the comedy warmth scene are each minor subplots.\nExplicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions.",
+      "original": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work.",
+      "edited": "Mira does not search for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work."
+    },
+    "condition": "delta_prompt",
+    "expected_messages_sha256": "ed6e92229443d445bb91705cec27d2587fc110a60e6f53ecb23e7c87667efd74",
+    "expected_rendered_sha256": "587764b42582f10cf47437879aef2f6b48a38809ab92159098fee7cebf13a7c2"
+  },
+  {
+    "fixture_id": "b01_c05:whole",
+    "row": {
+      "source": "Mira searches for missing navigation charts at the old harbor.\nOren watches sealed cargo crates at the old harbor.\nTavi helps Mira search for missing navigation charts. Tavi does not help Oren watch sealed cargo crates.\nMira notices a mysterious sealed envelope.\nMira and Tavi share a warm joke.\nThe central storyline follows Mira's work (Mira searches for missing navigation charts); its declared theme is relationships. The suspense mystery scene and the comedy warmth scene are each minor subplots.\nExplicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions.",
+      "original": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work.",
+      "edited": "Mira notices a mysterious sealed envelope. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work."
+    },
+    "condition": "whole",
+    "expected_messages_sha256": "a60ce4a3e292e759e8936be8b4210bc11d566bba6ed264a42a935afe63b91fac",
+    "expected_rendered_sha256": "05ed807f4f90a93081cf825089ec55b9b96ed6dee92690a6fd9f8cdb6871bbd5"
+  },
+  {
+    "fixture_id": "b01_c05:matched",
+    "row": {
+      "source": "Mira searches for missing navigation charts at the old harbor.\nOren watches sealed cargo crates at the old harbor.\nTavi helps Mira search for missing navigation charts. Tavi does not help Oren watch sealed cargo crates.\nMira notices a mysterious sealed envelope.\nMira and Tavi share a warm joke.\nThe central storyline follows Mira's work (Mira searches for missing navigation charts); its declared theme is relationships. The suspense mystery scene and the comedy warmth scene are each minor subplots.\nExplicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions.",
+      "original": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work.",
+      "edited": "Mira notices a mysterious sealed envelope. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work."
+    },
+    "condition": "matched",
+    "expected_messages_sha256": "8aa3b7c4ba331a59b86c980f37a26242ea59f24cbce2075e7ff508591361c58b",
+    "expected_rendered_sha256": "d1048b86467c866df75cb8535b0bb8562b48076011a0f09053d009935362afaf"
+  },
+  {
+    "fixture_id": "b01_c05:delta_prompt",
+    "row": {
+      "source": "Mira searches for missing navigation charts at the old harbor.\nOren watches sealed cargo crates at the old harbor.\nTavi helps Mira search for missing navigation charts. Tavi does not help Oren watch sealed cargo crates.\nMira notices a mysterious sealed envelope.\nMira and Tavi share a warm joke.\nThe central storyline follows Mira's work (Mira searches for missing navigation charts); its declared theme is relationships. The suspense mystery scene and the comedy warmth scene are each minor subplots.\nExplicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions.",
+      "original": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work.",
+      "edited": "Mira notices a mysterious sealed envelope. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work."
+    },
+    "condition": "delta_prompt",
+    "expected_messages_sha256": "9b87ec37070cde45744e2877c7006c4008463a41641c3b73365c324ec918b6b5",
+    "expected_rendered_sha256": "104e0f4b17e3807297b1f523a416ce593e4811e94ed2c7fd073f06410b0a3487"
+  },
+  {
+    "fixture_id": "b01_c06:whole",
+    "row": {
+      "source": "Mira searches for missing navigation charts at the old harbor.\nOren watches sealed cargo crates at the old harbor.\nTavi helps Mira search for missing navigation charts. Tavi does not help Oren watch sealed cargo crates.\nMira notices a mysterious sealed envelope.\nMira and Tavi share a warm joke.\nThe central storyline follows Mira's work (Mira searches for missing navigation charts); its declared theme is relationships. The suspense mystery scene and the comedy warmth scene are each minor subplots.\nExplicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions.",
+      "original": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work.",
+      "edited": "Mira and Tavi share a warm joke. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work."
+    },
+    "condition": "whole",
+    "expected_messages_sha256": "d2fea25cba0b60e78441558fd1122e25615a5eeeb01697f64b9f0670b0b01387",
+    "expected_rendered_sha256": "87902fdf576fbfea249c108c8b9b9c827449494cc4e2bb9a5bb4d8d28b3ce736"
+  },
+  {
+    "fixture_id": "b01_c06:matched",
+    "row": {
+      "source": "Mira searches for missing navigation charts at the old harbor.\nOren watches sealed cargo crates at the old harbor.\nTavi helps Mira search for missing navigation charts. Tavi does not help Oren watch sealed cargo crates.\nMira notices a mysterious sealed envelope.\nMira and Tavi share a warm joke.\nThe central storyline follows Mira's work (Mira searches for missing navigation charts); its declared theme is relationships. The suspense mystery scene and the comedy warmth scene are each minor subplots.\nExplicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions.",
+      "original": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work.",
+      "edited": "Mira and Tavi share a warm joke. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work."
+    },
+    "condition": "matched",
+    "expected_messages_sha256": "76776bb6adc2826bd4866d715c4f317c4f4bee41198eb6c0562aa7da992cf258",
+    "expected_rendered_sha256": "fabe8c5f3342cc67dc4916b506735593f726918647dc3dd86c28f8c0bf9ce979"
+  },
+  {
+    "fixture_id": "b01_c06:delta_prompt",
+    "row": {
+      "source": "Mira searches for missing navigation charts at the old harbor.\nOren watches sealed cargo crates at the old harbor.\nTavi helps Mira search for missing navigation charts. Tavi does not help Oren watch sealed cargo crates.\nMira notices a mysterious sealed envelope.\nMira and Tavi share a warm joke.\nThe central storyline follows Mira's work (Mira searches for missing navigation charts); its declared theme is relationships. The suspense mystery scene and the comedy warmth scene are each minor subplots.\nExplicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions.",
+      "original": "Mira searches for missing navigation charts at the old harbor. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work.",
+      "edited": "Mira and Tavi share a warm joke. Oren watches sealed cargo crates at the old harbor. The main storyline follows Mira's work."
+    },
+    "condition": "delta_prompt",
+    "expected_messages_sha256": "442523f5759da8ec37a9667c9b0c50e139393927e03e755e2c398fc40196aadc",
+    "expected_rendered_sha256": "fc5bf0438831413390c9d91d29650a9f3403039eec44b48dc90837bd444c0f75"
+  }
+]

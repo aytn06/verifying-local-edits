@@ -1,0 +1,17 @@
+{
+  "api_spend_usd": 0,
+  "cache_sha256": "0eddeb66bed99f657221207e4f9389da69e9ff56b75e20a00a3cec1404b5e800",
+  "case_count": 96,
+  "completed": 288,
+  "expected": 288,
+  "format_valid": 288,
+  "generation_calls": 288,
+  "human_labels": 0,
+  "input_tokens": 137577,
+  "malformed": 0,
+  "model_key": "qwen3_17b",
+  "output_tokens": 1728,
+  "run_protocol_sha256": "ff1b5744f1b7024d2e0b0347338cb927e575ac2df016c386434b04f3448abf87",
+  "semantic_certification": false,
+  "stage": "evaluation"
+}

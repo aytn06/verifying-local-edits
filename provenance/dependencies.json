@@ -1,0 +1,68 @@
+{
+  "python_observed": "3.13.7",
+  "machine_observed": "arm64",
+  "versions": {
+    "datasets": "4.8.5",
+    "mlx": "0.32.3",
+    "mlx-lm": "0.32.0",
+    "transformers": "5.19.0",
+    "tokenizers": "0.23.2",
+    "huggingface-hub": "1.33.0"
+  },
+  "models": {
+    "qwen3_8b": {
+      "files": {
+        "config.json": "eb21fe151c8d2b761794129a0f92a8b719a76d97705dda758ed6746c829a7720",
+        "model.safetensors": "fcc83d7537bee76cc143be3e25f8954b816798f93528103db1cddb02977c5617",
+        "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "tokenizer_config.json": "f45a828b27bfe1ae2080246d6de51c29370a0978f15b3299123830d5ba9e08a1"
+      },
+      "model_id": "Qwen/Qwen3-8B-MLX-4bit",
+      "revision": "383413e909f3bc5303ce195ebbdf0339c5a1a2a3",
+      "run_protocol_sha256": "ff1b5744f1b7024d2e0b0347338cb927e575ac2df016c386434b04f3448abf87",
+      "weight_sha256": "fcc83d7537bee76cc143be3e25f8954b816798f93528103db1cddb02977c5617"
+    },
+    "qwen3_17b": {
+      "files": {
+        "config.json": "4e95bb0b083bf4847aacc08e67c5d59410f45fff6f43889d6ff400511c243fa5",
+        "model.safetensors": "42e688d626b3e144bf721af7517a82f3ea7e97bb5764fef1c89942bf9165072a",
+        "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "tokenizer_config.json": "5fdfe1416aaa323832d52c5bd8624a6e9bba3e9acc6ca8104f017abc775e2368"
+      },
+      "model_id": "Qwen/Qwen3-1.7B-MLX-4bit",
+      "revision": "21457c6f51ed54a7c16e988c0844db973815c137",
+      "run_protocol_sha256": "ff1b5744f1b7024d2e0b0347338cb927e575ac2df016c386434b04f3448abf87",
+      "weight_sha256": "42e688d626b3e144bf721af7517a82f3ea7e97bb5764fef1c89942bf9165072a"
+    }
+  },
+  "dataset": {
+    "id": "Salesforce/summedits",
+    "revision": "dd891c290baa301b61040b0be75cadc482f5108e",
+    "file": "summedits.json",
+    "bytes": 28633895,
+    "sha256": "21e34593330020d02b7d92f4651fdcc550f7d79a2f899392f106fd816c215a89"
+  },
+  "prepared_files_original_sha256": {
+    "dev.jsonl": "14b827531a401698aa15e774fa41185a3efe49a7ef084c60892eac694fbac361",
+    "test.jsonl": "5677c1776dc6f0f93fdc17d01d0b792b45fb6fb796114d3044e3a9d957910ae8",
+    "sample_manifest.json": "e4302cc4e3cb39adb02ad2b790290f554a37addcbba2687721affcb1dc626e93"
+  },
+  "baseline_decoding": {
+    "temperature": 0,
+    "sampler": "greedy",
+    "max_tokens": 64,
+    "retries": 0,
+    "context_limit": 40960,
+    "enable_thinking": false
+  },
+  "controlled_configuration": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "max_tokens": 128,
+    "batch_size": 4,
+    "repetitions": 1,
+    "retry_count": 0,
+    "base_seed": 281905
+  }
+}

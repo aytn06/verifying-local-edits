@@ -1,0 +1,131 @@
+{
+  "dataset": "Salesforce/summedits",
+  "dataset_revision": "ce0c479aaf59259abb6b67e42248b2f49004b7d5",
+  "dev_test_source_disjoint": true,
+  "eligible_domain_sources": {
+    "billsum": 10,
+    "ectsum": 8,
+    "news": 8,
+    "podcast": 3,
+    "qmsumm": 6,
+    "sales_call": 7,
+    "sales_email": 6,
+    "samsum": 7,
+    "scitldr": 4,
+    "shakespeare": 12
+  },
+  "eligible_paired_sources": 71,
+  "files": {
+    "dev.jsonl": "f933a81bf601cb1f36858c37443edea723ed6373f4152cb302b5f51b700e34f0",
+    "dev.metadata.jsonl": "32a652b548d0949d09a73f7a0e405363854e0d04462e6289b829739981b27095",
+    "label_flags.json": "eaf309673265e54bbc69ec38aca7335600fcfb17656cf6f596f6827d49ea24c1",
+    "prior_source_exclusions.json": "f62667e76cb476a49ff37ff635a2920429695bd23f4cf928fa0b5c901aae1c65",
+    "selection_protocol.json": "69463e4eeb6931613ddc5aa5a40df93d5d55e7c632c1772b0a7caa936cf661b4",
+    "test.jsonl": "e50a5f081381d13df9a7bcae6cfb114e3e7eed04f7acae681ad6bbf6d11a9526",
+    "test.metadata.jsonl": "145f7de7054646a54239ce6161ae40e2ac90fbd75427bbfa312ae20c77019871"
+  },
+  "ineligible_unused_sources": 5,
+  "labels_unchanged": true,
+  "malformed_rows": {},
+  "model_calls": 0,
+  "network_calls": 0,
+  "normalized_source_count": 216,
+  "preparation_script_sha256": "0763ed62fb6308546c5b372ff36aefa046371e03fd895c8bfb12f78110d5230c",
+  "prior_prediction_checks": [
+    {
+      "all_cases_in_prior_splits": true,
+      "name": "dev_predictions.jsonl",
+      "records": 120,
+      "sha256": "98e2c2707cdcf592c51e207fa82d4f813667d6e952edb1a69d5c49ca4c01bf5c"
+    },
+    {
+      "all_cases_in_prior_splits": true,
+      "name": "predictions.jsonl",
+      "records": 40,
+      "sha256": "79aa5db86a97e2dfb4d886cc2f3aaa0c2f6a1aa6fb5fadfe264bc95e82ce6354"
+    },
+    {
+      "all_cases_in_prior_splits": true,
+      "name": "predictions.jsonl",
+      "records": 300,
+      "sha256": "c8cd6738b043675d07712ffc24f0f956d666df1ee7f65dfb1280d2d394889356"
+    }
+  ],
+  "prior_rows": 140,
+  "prior_sources_excluded": 140,
+  "prior_split_files": [
+    {
+      "name": "dev.jsonl",
+      "sha256": "14b827531a401698aa15e774fa41185a3efe49a7ef084c60892eac694fbac361"
+    },
+    {
+      "name": "test.jsonl",
+      "sha256": "5677c1776dc6f0f93fdc17d01d0b792b45fb6fb796114d3044e3a9d957910ae8"
+    }
+  ],
+  "prior_unique_case_ids": 140,
+  "raw_cache_sha256": "06fd8c51b55f2ffe0cff25ddd791bc220c849162411ecdf48c305d9e862dd866",
+  "raw_rows": 6348,
+  "selection_seed": 20261009,
+  "source_disjoint_from_all_prior_splits": true,
+  "splits": {
+    "dev": {
+      "class_counts": {
+        "0": 10,
+        "1": 10
+      },
+      "domain_source_counts": {
+        "billsum": 1,
+        "ectsum": 1,
+        "news": 1,
+        "podcast": 1,
+        "qmsumm": 1,
+        "sales_call": 1,
+        "sales_email": 1,
+        "samsum": 1,
+        "scitldr": 1,
+        "shakespeare": 1
+      },
+      "examples": 20,
+      "same_source_and_seed_per_pair": true,
+      "source_characters": {
+        "max": 5946,
+        "median": 1607.0,
+        "min": 310
+      },
+      "sources": 10
+    },
+    "test": {
+      "class_counts": {
+        "0": 50,
+        "1": 50
+      },
+      "domain_source_counts": {
+        "billsum": 7,
+        "ectsum": 6,
+        "news": 6,
+        "podcast": 2,
+        "qmsumm": 4,
+        "sales_call": 5,
+        "sales_email": 4,
+        "samsum": 5,
+        "scitldr": 2,
+        "shakespeare": 9
+      },
+      "examples": 100,
+      "same_source_and_seed_per_pair": true,
+      "source_characters": {
+        "max": 12367,
+        "median": 3392.5,
+        "min": 131
+      },
+      "sources": 50
+    }
+  },
+  "status": "frozen_data_prepared_without_inference",
+  "structural_conflict_groups": 0,
+  "study": "checklist_replication_v1",
+  "unused_eligible_sources_remaining": 11,
+  "unused_sources": 76,
+  "valid_rows": 6348
+}

@@ -1,0 +1,25 @@
+{
+  "domain_strata": "A source's stratum is the sorted unique domain list joined with |. Select at least one dev source per stratum, then allocate any remaining dev quota by largest remainder proportional to residual capacity. Allocate test quota by largest remainder proportional to residual source capacity after dev selection. Hash-break all ties.",
+  "eligibility": "Nonempty source, original, edited text and original binary benchmark label; edited and original differ after NFKC and whitespace normalization. Require label-0 and label-1 candidates with the identical stripped source text and original seed summary. Exclude candidate text with conflicting benchmark labels within that exact source/seed group, without changing any label.",
+  "examples_per_source": 2,
+  "exclusion": "Exclude an entire normalized-source group if it occurs in any supplied prior split, across every domain. Prior predictions must all belong to supplied prior splits.",
+  "grouping": "Cluster by normalized source across domains. Choose one exact source/seed pairing group per cluster by seeded hash. No fallback to different seeds.",
+  "label_policy": "Benchmark labels retained verbatim as integers; structural label conflicts flagged separately and never corrected.",
+  "labels_per_source": [
+    0,
+    1
+  ],
+  "length_filter": null,
+  "model_calls": 0,
+  "network_calls": 0,
+  "requested_dev_sources": 10,
+  "requested_test_sources": 50,
+  "row_order": "Independently hash-shuffle each split's rows after pairing, so label ordering is not fixed.",
+  "selection_information": "Only structural eligibility, original labels, domain, source/seed/candidate identity, and deterministic hashes; no model predictions, manual error categories, or candidate quality scoring.",
+  "selection_seed": 20261009,
+  "source_normalization": "Unicode NFKC; collapse all Unicode whitespace to one ASCII space; strip; preserve case and punctuation",
+  "split_policy": "Freeze prompts/settings on development only before executing test. Existing study data and results are unchanged. Do not tune or select methods on this new test split.",
+  "study": "checklist_replication_v1",
+  "uncertainty_unit": "Normalized source document, not individual paired edits.",
+  "within_stratum_selection": "Order source IDs by SHA256(selection_seed|source|normalized_source_id); take dev sources first, then test sources, leaving unused remainder. Choose seed and each label's candidate by independently salted hashes of immutable identities."
+}

@@ -1,0 +1,14 @@
+{
+  "api_spend_usd": 0,
+  "cache_sha256": "194c747de9f9a19fa460e030b0b86e52bb0f298dc592be33ac295b3ab51a8246",
+  "completed": 48,
+  "expected": 48,
+  "format_valid": 48,
+  "generation_calls": 48,
+  "human_labels": 0,
+  "input_tokens": 19593,
+  "model_key": "qwen3_8b",
+  "output_tokens": 288,
+  "protocol_sha256": "467b87e164d5373d59429ec8833b15a52c2548b1786e50c04add67217c1dbc39",
+  "scope": "post_smoke_exploratory_development_only"
+}

@@ -1,0 +1,46 @@
+{
+  "collections": [
+    {
+      "model_key": "qwen3_8b",
+      "scope": "primary_controlled_verification",
+      "calls": 432,
+      "format_valid": 432,
+      "input_tokens": 206540,
+      "output_tokens": 2592,
+      "batch_generation_seconds": 1774.0277353757992,
+      "batches": 109
+    },
+    {
+      "model_key": "qwen3_17b",
+      "scope": "primary_controlled_verification",
+      "calls": 432,
+      "format_valid": 432,
+      "input_tokens": 206540,
+      "output_tokens": 2592,
+      "batch_generation_seconds": 346.0394226256758,
+      "batches": 109
+    },
+    {
+      "model_key": "qwen3_8b",
+      "scope": "exploratory_E6_removal_development_only",
+      "calls": 48,
+      "format_valid": 48,
+      "input_tokens": 19593,
+      "output_tokens": 288,
+      "batch_generation_seconds": 140.71936025191098,
+      "batches": 12
+    }
+  ],
+  "totals": {
+    "calls": 912,
+    "format_valid": 912,
+    "input_tokens": 432673,
+    "output_tokens": 5472,
+    "batches": 230
+  },
+  "api_spend_usd": 0,
+  "retry_count": 0,
+  "human_labels": 0,
+  "timing_scope": "sum of separately recorded batch inference times; excludes model loading, CPU rendering, disk, analysis; not online latency or total compute",
+  "effective_input_comparison": "all432 primary prompt token sequences identical across models; 1.7B uses explicit verified empty-thought prefill"
+}

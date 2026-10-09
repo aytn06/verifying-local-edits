@@ -1,0 +1,17 @@
+{
+  "judgment_ids": [
+    "qwen3_17b:b08_c06:whole_factual:0",
+    "qwen3_17b:b08_c06:whole_factual_prominence:0"
+  ],
+  "scope": "batch_generation_only_not_serving_latency",
+  "stats": {
+    "decode_time": 0.11072796070948243,
+    "generation_steps": 7,
+    "generation_tokens": 14,
+    "peak_memory": 1.845210564,
+    "prompt_time": 1.412007749080658,
+    "prompt_tokens": 974,
+    "wall_time": 1.5518962498754263
+  },
+  "wall_seconds": 1.5621618749573827
+}

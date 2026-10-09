@@ -1,0 +1,177 @@
+[
+  {
+    "source": "scripts/replication/analyze.py",
+    "source_sha256": "0ffa2d1118fc19415b0956b62ba7f5a328acf6e42e595d426c93aaccdf09bfbe",
+    "public": "reference/analyze.py",
+    "public_sha256": "0ffa2d1118fc19415b0956b62ba7f5a328acf6e42e595d426c93aaccdf09bfbe",
+    "transformation": "byte-identical"
+  },
+  {
+    "source": "scripts/replication/test_analysis.py",
+    "source_sha256": "a68d9cbb525cee66b478e22ba37c80828b937251c60df8260f7afe22206d3c95",
+    "public": "reference/test_analysis.py",
+    "public_sha256": "a68d9cbb525cee66b478e22ba37c80828b937251c60df8260f7afe22206d3c95",
+    "transformation": "byte-identical"
+  },
+  {
+    "source": "scripts/replication/prepare.py",
+    "source_sha256": "0763ed62fb6308546c5b372ff36aefa046371e03fd895c8bfb12f78110d5230c",
+    "public": "reference/prepare.py",
+    "public_sha256": "0763ed62fb6308546c5b372ff36aefa046371e03fd895c8bfb12f78110d5230c",
+    "transformation": "byte-identical"
+  },
+  {
+    "source": "data/checklist_replication/manifest.json",
+    "source_sha256": "6a36a10b392aef66c6ec54835e2a060cc97514de11f7eb2a9541dc977114ea63",
+    "public": "data/manifest.json",
+    "public_sha256": "6a36a10b392aef66c6ec54835e2a060cc97514de11f7eb2a9541dc977114ea63",
+    "transformation": "byte-identical"
+  },
+  {
+    "source": "data/checklist_replication/selection_protocol.json",
+    "source_sha256": "69463e4eeb6931613ddc5aa5a40df93d5d55e7c632c1772b0a7caa936cf661b4",
+    "public": "data/selection_protocol.json",
+    "public_sha256": "69463e4eeb6931613ddc5aa5a40df93d5d55e7c632c1772b0a7caa936cf661b4",
+    "transformation": "byte-identical"
+  },
+  {
+    "source": "data/checklist_replication/prior_source_exclusions.json",
+    "source_sha256": "f62667e76cb476a49ff37ff635a2920429695bd23f4cf928fa0b5c901aae1c65",
+    "public": "data/prior_source_exclusions.json",
+    "public_sha256": "f62667e76cb476a49ff37ff635a2920429695bd23f4cf928fa0b5c901aae1c65",
+    "transformation": "byte-identical"
+  },
+  {
+    "source": "data/checklist_replication/label_flags.json",
+    "source_sha256": "eaf309673265e54bbc69ec38aca7335600fcfb17656cf6f596f6827d49ea24c1",
+    "public": "data/label_flags.json",
+    "public_sha256": "eaf309673265e54bbc69ec38aca7335600fcfb17656cf6f596f6827d49ea24c1",
+    "transformation": "byte-identical"
+  },
+  {
+    "source": "data/checklist_replication/dev.metadata.jsonl",
+    "source_sha256": "32a652b548d0949d09a73f7a0e405363854e0d04462e6289b829739981b27095",
+    "public": "data/dev.jsonl",
+    "public_sha256": "32a652b548d0949d09a73f7a0e405363854e0d04462e6289b829739981b27095",
+    "transformation": "byte-identical"
+  },
+  {
+    "source": "data/checklist_replication/dev.jsonl",
+    "source_sha256": "f933a81bf601cb1f36858c37443edea723ed6373f4152cb302b5f51b700e34f0",
+    "public": "data/dev.jsonl",
+    "public_sha256": "32a652b548d0949d09a73f7a0e405363854e0d04462e6289b829739981b27095",
+    "transformation": "omit source, original, edited, edit_types; preserve every other field and original row order"
+  },
+  {
+    "source": "data/checklist_replication/test.metadata.jsonl",
+    "source_sha256": "145f7de7054646a54239ce6161ae40e2ac90fbd75427bbfa312ae20c77019871",
+    "public": "data/test.jsonl",
+    "public_sha256": "145f7de7054646a54239ce6161ae40e2ac90fbd75427bbfa312ae20c77019871",
+    "transformation": "byte-identical"
+  },
+  {
+    "source": "data/checklist_replication/test.jsonl",
+    "source_sha256": "e50a5f081381d13df9a7bcae6cfb114e3e7eed04f7acae681ad6bbf6d11a9526",
+    "public": "data/test.jsonl",
+    "public_sha256": "145f7de7054646a54239ce6161ae40e2ac90fbd75427bbfa312ae20c77019871",
+    "transformation": "omit source, original, edited, edit_types; preserve every other field and original row order"
+  },
+  {
+    "source": "results/checklist_replication/freeze.json",
+    "source_sha256": "28d7808068dba970301c69187b8bdc3909000e1d28c037e953c5b8c5b22dc68f",
+    "public": "provenance/freeze.public.json",
+    "public_sha256": "d40bc33c1dc62a443bc5c1ded2c9659d6202921293ae261e663b5eda4e95c5f2",
+    "transformation": "remove absolute model locations; replace original private-path protection map with count and SHA256 commitment"
+  },
+  {
+    "source": "results/checklist_replication/dataset_revision_verification.json",
+    "source_sha256": "bb4d888793ce508a5680a6d038e66e869257234c111a7ef835232ca1c385372f",
+    "public": "provenance/dataset_revision_verification.json",
+    "public_sha256": "5093f697302c43f6bd347082a6c77053dc6bbf74bd7e59345e250e77951e747f",
+    "transformation": "omit checked_utc from post-freeze upstream revision verification receipt; retain all upstream revision and raw-file identity evidence"
+  },
+  {
+    "source": "results/checklist_replication/requests/dev_qwen3_8b.json",
+    "source_sha256": "4b1b8b277951db8a865e773350426479c64c7624fe5bb72d7542697603a498df",
+    "public": "provenance/requests/dev_qwen3_8b.jsonl",
+    "public_sha256": "6e94bfc6bdc6a8fdceb165b489ac7d08ffa1e8ab0515cf0747b5e311fa661672",
+    "transformation": "omit messages, rendered_prompt, input_token_ids; preserve request ID/settings/counts and SHA256 commitments"
+  },
+  {
+    "source": "results/checklist_replication/requests/dev_llama32_3b.json",
+    "source_sha256": "23152552c095a31050f5b888854ec68004eb7bf1b609236ec2bba74c2298ffb1",
+    "public": "provenance/requests/dev_llama32_3b.jsonl",
+    "public_sha256": "51b81eb8cf18810d7919c37f3ffc512526a7a3a5fb7b4ee2a74588d6ef888ebd",
+    "transformation": "omit messages, rendered_prompt, input_token_ids; preserve request ID/settings/counts and SHA256 commitments"
+  },
+  {
+    "source": "results/checklist_replication/requests/test_qwen3_8b.json",
+    "source_sha256": "256859e55a3ba3364ca5ee009993bd9dd9a24087d629b51fb8e4a3a1b47dc603",
+    "public": "provenance/requests/test_qwen3_8b.jsonl",
+    "public_sha256": "5602f8c3d0cc896affc6e787cd6772e1b7f09062e1563b3b88562d2088f5f621",
+    "transformation": "omit messages, rendered_prompt, input_token_ids; preserve request ID/settings/counts and SHA256 commitments"
+  },
+  {
+    "source": "results/checklist_replication/requests/test_llama32_3b.json",
+    "source_sha256": "53bce92352fedb8398d4c8d57f5897df15c0772693f40e4793a4bc333ad9466d",
+    "public": "provenance/requests/test_llama32_3b.jsonl",
+    "public_sha256": "252adcf6f07a575755278e9e6eb0c6892de2d7317d08557d85fecefee663fded",
+    "transformation": "omit messages, rendered_prompt, input_token_ids; preserve request ID/settings/counts and SHA256 commitments"
+  },
+  {
+    "source": "results/checklist_replication/dev/qwen3_8b/responses.jsonl",
+    "source_sha256": "6869efb991c98a5a4e7ef2d5331b71b22e27914f0ab23af292145a044eec27da",
+    "public": "results/dev/qwen3_8b/responses.jsonl",
+    "public_sha256": "24673baed56104e06bcc973d00d245bcc9e7add33ebfbdbc96730c9201d2f918",
+    "transformation": "retain all scoring, cost, terminal-state and diagnostic fields; retain strict verdict JSON only; omit decoded prose/token sequences with SHA256 commitments"
+  },
+  {
+    "source": "results/checklist_replication/dev/qwen3_8b/completed.json",
+    "source_sha256": "c8feebf06b0ebb45808b2a358c2da881a7b9ded73cd9339fa39a07a10a8d0a1d",
+    "public": "provenance/completions/dev_qwen3_8b.json",
+    "public_sha256": "c8feebf06b0ebb45808b2a358c2da881a7b9ded73cd9339fa39a07a10a8d0a1d",
+    "transformation": "byte-identical"
+  },
+  {
+    "source": "results/checklist_replication/dev/llama32_3b/responses.jsonl",
+    "source_sha256": "34d4c4465b9769a7e2efa9bf2c337115156d86543785e7825d7fc23b5fad6bf0",
+    "public": "results/dev/llama32_3b/responses.jsonl",
+    "public_sha256": "5643a962c8ab5e14a5e8d0bf7c033b75685339e93f691fb58a8296cb87cf0854",
+    "transformation": "retain all scoring, cost, terminal-state and diagnostic fields; retain strict verdict JSON only; omit decoded prose/token sequences with SHA256 commitments"
+  },
+  {
+    "source": "results/checklist_replication/dev/llama32_3b/completed.json",
+    "source_sha256": "31212392dc5d028b244bd018191f051571b954daf2b7186c7c23626fa2269945",
+    "public": "provenance/completions/dev_llama32_3b.json",
+    "public_sha256": "31212392dc5d028b244bd018191f051571b954daf2b7186c7c23626fa2269945",
+    "transformation": "byte-identical"
+  },
+  {
+    "source": "results/checklist_replication/test/qwen3_8b/responses.jsonl",
+    "source_sha256": "5cc61267ff4392700265ba1ad8e64e630bcfb5283272fce0c18323fde17173bf",
+    "public": "results/test/qwen3_8b/responses.jsonl",
+    "public_sha256": "4809d92eafb0aeaf3defd51a9692120a4a2a0b775dd9c6492fcaea3ba9c8be69",
+    "transformation": "retain all scoring, cost, terminal-state and diagnostic fields; retain strict verdict JSON only; omit decoded prose/token sequences with SHA256 commitments"
+  },
+  {
+    "source": "results/checklist_replication/test/qwen3_8b/completed.json",
+    "source_sha256": "bd2e66dff960f6d5402afb6d4f54404e6e55f8c6127162e06bb7d93d94a62757",
+    "public": "provenance/completions/test_qwen3_8b.json",
+    "public_sha256": "bd2e66dff960f6d5402afb6d4f54404e6e55f8c6127162e06bb7d93d94a62757",
+    "transformation": "byte-identical"
+  },
+  {
+    "source": "results/checklist_replication/test/llama32_3b/responses.jsonl",
+    "source_sha256": "6036aa6a779ba085d7cb8e2f3aee033180a46756d020363faea5212d8c6f7a6e",
+    "public": "results/test/llama32_3b/responses.jsonl",
+    "public_sha256": "91fa571507c6905e822de878ea687326207bc86276f41eeb185b6151bf6c4339",
+    "transformation": "retain all scoring, cost, terminal-state and diagnostic fields; retain strict verdict JSON only; omit decoded prose/token sequences with SHA256 commitments"
+  },
+  {
+    "source": "results/checklist_replication/test/llama32_3b/completed.json",
+    "source_sha256": "2790f53dbd114e8fed93e48be5db0aae34fa92814c90be6832c1494eed37519e",
+    "public": "provenance/completions/test_llama32_3b.json",
+    "public_sha256": "2790f53dbd114e8fed93e48be5db0aae34fa92814c90be6832c1494eed37519e",
+    "transformation": "byte-identical"
+  }
+]

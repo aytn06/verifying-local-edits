@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying research preprint using the preferred citation. No DOI or peer-reviewed acceptance is asserted."
+title: "Verifying Local Edits Under Factual and Editorial Constraints"
+type: software
+authors:
+  - family-names: Polavarapu
+    given-names: Achintya Raya
+repository-code: "https://github.com/aytn06/verifying-local-edits"
+url: "https://aytn06.github.io/verifying-local-edits/"
+abstract: "Frozen controlled verification fixtures and cached SummEdits measurement projections, with CPU reproduction of numerical tables and source-cluster comparisons."
+preferred-citation:
+  type: article
+  title: "Verifying Local Edits Under Factual and Editorial Constraints"
+  authors:
+    - family-names: Polavarapu
+      given-names: Achintya Raya
+    - family-names: Youssef
+      given-names: Ahmedijad
+  year: 2026
+  month: 10
+  url: "https://aytn06.github.io/verifying-local-edits/"
+  notes: "Research preprint. First public GitHub release: 9 October 2026."

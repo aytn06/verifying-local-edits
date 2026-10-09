@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "baseline_cached_requests_compared": 420,
+  "development_requests": 120,
+  "test_requests": 300,
+  "checks": [
+    "independent adapter messages equal original kit messages and cached messages",
+    "independent 8B baseline rendering hashes equal all original rendered hashes"
+  ],
+  "network_calls": 0,
+  "model_calls": 0,
+  "external_text_or_token_ids_distributed": false,
+  "owned_controlled_prompt_fixtures": 18,
+  "upstream_kit_source_sha256": "bc44f9465f67edb5f98f9771a9193140d9882feffe9cb1b2960f8dc9497611c8",
+  "public_adapter_sha256": "49fcd99bbffa77aeb113f49f3201507ca3d2f75173830825e9193eadf2028900"
+}

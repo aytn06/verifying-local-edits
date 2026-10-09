@@ -1,0 +1,19 @@
+{
+  "judgment_ids": [
+    "qwen3_17b:b08_c03:whole_factual_prominence:0",
+    "qwen3_17b:b08_c04:replacement_factual:0",
+    "qwen3_17b:b08_c04:whole_factual:0",
+    "qwen3_17b:b08_c04:whole_factual_prominence:0"
+  ],
+  "scope": "batch_generation_only_not_serving_latency",
+  "stats": {
+    "decode_time": 0.16779258288443089,
+    "generation_steps": 7,
+    "generation_tokens": 28,
+    "peak_memory": 1.845210564,
+    "prompt_time": 2.8715038327500224,
+    "prompt_tokens": 1954,
+    "wall_time": 3.0678576668724418
+  },
+  "wall_seconds": 3.082323375158012
+}

@@ -1,0 +1,255 @@
+[
+  {
+    "first": "matched",
+    "second": "whole",
+    "metric": "accuracy",
+    "n_pairs": 100,
+    "first_count": 75,
+    "second_count": 74,
+    "first_only_count": 4,
+    "second_only_count": 3,
+    "both_count": 71,
+    "neither_count": 22,
+    "first_minus_second_rate": 0.01,
+    "paired_source_bootstrap_95_interval": [
+      -0.04,
+      0.06
+    ],
+    "discordant_case_ids": [
+      "63fe83a6822983eae8845b4c_9",
+      "63f9455b8d931ba6e664fb91_8",
+      "BkxmKgHtwH_18",
+      "billsum_train_18765_28",
+      "q_test_19_20",
+      "shakespeare_24_16",
+      "samsum_train_13820270_25"
+    ],
+    "exact_mcnemar_two_sided_p_unadjusted": 1.0,
+    "first_only_correct": 4,
+    "second_only_correct": 3
+  },
+  {
+    "first": "matched",
+    "second": "whole",
+    "metric": "invalid_accept_rate",
+    "n_pairs": 50,
+    "first_count": 22,
+    "second_count": 23,
+    "first_only_count": 3,
+    "second_only_count": 4,
+    "both_count": 19,
+    "neither_count": 24,
+    "first_minus_second_rate": -0.02,
+    "paired_source_bootstrap_95_interval": [
+      -0.12,
+      0.08
+    ],
+    "discordant_case_ids": [
+      "63fe83a6822983eae8845b4c_9",
+      "63f9455b8d931ba6e664fb91_8",
+      "BkxmKgHtwH_18",
+      "billsum_train_18765_28",
+      "q_test_19_20",
+      "shakespeare_24_16",
+      "samsum_train_13820270_25"
+    ],
+    "exact_mcnemar_two_sided_p_unadjusted": 1.0,
+    "first_only_error": 3,
+    "second_only_error": 4
+  },
+  {
+    "first": "matched",
+    "second": "whole",
+    "metric": "valid_reject_rate",
+    "n_pairs": 50,
+    "first_count": 3,
+    "second_count": 3,
+    "first_only_count": 0,
+    "second_only_count": 0,
+    "both_count": 3,
+    "neither_count": 47,
+    "first_minus_second_rate": 0.0,
+    "paired_source_bootstrap_95_interval": [
+      0.0,
+      0.0
+    ],
+    "discordant_case_ids": [],
+    "exact_mcnemar_two_sided_p_unadjusted": 1.0,
+    "first_only_error": 0,
+    "second_only_error": 0
+  },
+  {
+    "first": "delta_prompt",
+    "second": "whole",
+    "metric": "accuracy",
+    "n_pairs": 100,
+    "first_count": 82,
+    "second_count": 74,
+    "first_only_count": 10,
+    "second_only_count": 2,
+    "both_count": 72,
+    "neither_count": 16,
+    "first_minus_second_rate": 0.08,
+    "paired_source_bootstrap_95_interval": [
+      0.02,
+      0.15
+    ],
+    "discordant_case_ids": [
+      "63fe83a6822983eae8845b4c_9",
+      "63f9455b8d931ba6e664fb91_8",
+      "spotify_podcast_9_1",
+      "spotify_podcast_2_3",
+      "q_test_15_20",
+      "spotify_podcast_24_28",
+      "ectsum_IQV_q4_2021_20",
+      "billsum_train_18765_28",
+      "sales_email_9_14",
+      "shakespeare_24_16",
+      "billsum_train_18187_6",
+      "samsum_train_13820270_25"
+    ],
+    "exact_mcnemar_two_sided_p_unadjusted": 0.03857421875,
+    "first_only_correct": 10,
+    "second_only_correct": 2
+  },
+  {
+    "first": "delta_prompt",
+    "second": "whole",
+    "metric": "invalid_accept_rate",
+    "n_pairs": 50,
+    "first_count": 14,
+    "second_count": 23,
+    "first_only_count": 1,
+    "second_only_count": 10,
+    "both_count": 13,
+    "neither_count": 26,
+    "first_minus_second_rate": -0.18,
+    "paired_source_bootstrap_95_interval": [
+      -0.3,
+      -0.06
+    ],
+    "discordant_case_ids": [
+      "63fe83a6822983eae8845b4c_9",
+      "63f9455b8d931ba6e664fb91_8",
+      "spotify_podcast_9_1",
+      "spotify_podcast_2_3",
+      "q_test_15_20",
+      "spotify_podcast_24_28",
+      "ectsum_IQV_q4_2021_20",
+      "billsum_train_18765_28",
+      "sales_email_9_14",
+      "shakespeare_24_16",
+      "samsum_train_13820270_25"
+    ],
+    "exact_mcnemar_two_sided_p_unadjusted": 0.01171875,
+    "first_only_error": 1,
+    "second_only_error": 10
+  },
+  {
+    "first": "delta_prompt",
+    "second": "whole",
+    "metric": "valid_reject_rate",
+    "n_pairs": 50,
+    "first_count": 4,
+    "second_count": 3,
+    "first_only_count": 1,
+    "second_only_count": 0,
+    "both_count": 3,
+    "neither_count": 46,
+    "first_minus_second_rate": 0.02,
+    "paired_source_bootstrap_95_interval": [
+      0.0,
+      0.06
+    ],
+    "discordant_case_ids": [
+      "billsum_train_18187_6"
+    ],
+    "exact_mcnemar_two_sided_p_unadjusted": 1.0,
+    "first_only_error": 1,
+    "second_only_error": 0
+  },
+  {
+    "first": "delta_prompt",
+    "second": "matched",
+    "metric": "accuracy",
+    "n_pairs": 100,
+    "first_count": 82,
+    "second_count": 75,
+    "first_only_count": 8,
+    "second_only_count": 1,
+    "both_count": 74,
+    "neither_count": 17,
+    "first_minus_second_rate": 0.07,
+    "paired_source_bootstrap_95_interval": [
+      0.02,
+      0.13
+    ],
+    "discordant_case_ids": [
+      "spotify_podcast_9_1",
+      "spotify_podcast_2_3",
+      "q_test_15_20",
+      "BkxmKgHtwH_18",
+      "spotify_podcast_24_28",
+      "ectsum_IQV_q4_2021_20",
+      "sales_email_9_14",
+      "q_test_19_20",
+      "billsum_train_18187_6"
+    ],
+    "exact_mcnemar_two_sided_p_unadjusted": 0.0390625,
+    "first_only_correct": 8,
+    "second_only_correct": 1
+  },
+  {
+    "first": "delta_prompt",
+    "second": "matched",
+    "metric": "invalid_accept_rate",
+    "n_pairs": 50,
+    "first_count": 14,
+    "second_count": 22,
+    "first_only_count": 0,
+    "second_only_count": 8,
+    "both_count": 14,
+    "neither_count": 28,
+    "first_minus_second_rate": -0.16,
+    "paired_source_bootstrap_95_interval": [
+      -0.26,
+      -0.06
+    ],
+    "discordant_case_ids": [
+      "spotify_podcast_9_1",
+      "spotify_podcast_2_3",
+      "q_test_15_20",
+      "BkxmKgHtwH_18",
+      "spotify_podcast_24_28",
+      "ectsum_IQV_q4_2021_20",
+      "sales_email_9_14",
+      "q_test_19_20"
+    ],
+    "exact_mcnemar_two_sided_p_unadjusted": 0.0078125,
+    "first_only_error": 0,
+    "second_only_error": 8
+  },
+  {
+    "first": "delta_prompt",
+    "second": "matched",
+    "metric": "valid_reject_rate",
+    "n_pairs": 50,
+    "first_count": 4,
+    "second_count": 3,
+    "first_only_count": 1,
+    "second_only_count": 0,
+    "both_count": 3,
+    "neither_count": 46,
+    "first_minus_second_rate": 0.02,
+    "paired_source_bootstrap_95_interval": [
+      0.0,
+      0.06
+    ],
+    "discordant_case_ids": [
+      "billsum_train_18187_6"
+    ],
+    "exact_mcnemar_two_sided_p_unadjusted": 1.0,
+    "first_only_error": 1,
+    "second_only_error": 0
+  }
+]

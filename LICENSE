@@ -1,0 +1,15 @@
+Rights notice — no blanket license grant
+
+Author-controlled manuscript, constructed fixtures, and research code remain
+subject to the author's rights. No general open-source or redistribution license
+is granted by this release-preparation package. The author may choose a license
+at publication; no choice is inferred here.
+
+Upstream model, tokenizer, runtime, dataset, source-corpus, and other third-party
+rights remain with their respective owners and under their respective terms.
+Those terms are not replaced, broadened, or sublicensed by this file.
+See THIRD_PARTY.md for provenance and exclusions.
+
+The third-party research-kit implementation is not distributed. Recording its
+source hash and the exact scientific experimental specification does not assert
+ownership of or a license to that implementation.

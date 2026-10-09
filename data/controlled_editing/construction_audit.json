@@ -1,0 +1,13 @@
+{
+  "schema": "controlled-editing-verification-v1",
+  "status": "construction_checks_passed_not_semantic_human_validation",
+  "worlds": 24,
+  "candidates": 144,
+  "development_candidates": 48,
+  "evaluation_candidates": 96,
+  "families": 6,
+  "evaluation_families": 4,
+  "identical_fragment_role_pairs": 24,
+  "stress_metadata_rows": 48,
+  "human_labels": 0
+}

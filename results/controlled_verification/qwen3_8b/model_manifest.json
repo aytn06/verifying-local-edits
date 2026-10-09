@@ -1,0 +1,12 @@
+{
+  "files": {
+    "config.json": "eb21fe151c8d2b761794129a0f92a8b719a76d97705dda758ed6746c829a7720",
+    "model.safetensors": "fcc83d7537bee76cc143be3e25f8954b816798f93528103db1cddb02977c5617",
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "tokenizer_config.json": "f45a828b27bfe1ae2080246d6de51c29370a0978f15b3299123830d5ba9e08a1"
+  },
+  "model_id": "Qwen/Qwen3-8B-MLX-4bit",
+  "revision": "383413e909f3bc5303ce195ebbdf0339c5a1a2a3",
+  "run_protocol_sha256": "ff1b5744f1b7024d2e0b0347338cb927e575ac2df016c386434b04f3448abf87",
+  "weight_sha256": "fcc83d7537bee76cc143be3e25f8954b816798f93528103db1cddb02977c5617"
+}

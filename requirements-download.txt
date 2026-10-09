@@ -1,0 +1,2 @@
+# Optional only; CPU table replay has no third-party dependencies.
+huggingface-hub==1.33.0

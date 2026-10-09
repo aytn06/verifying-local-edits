@@ -1,0 +1,30 @@
+{
+  "dataset": "Salesforce/summedits",
+  "frozen_dataset_revision": "ce0c479aaf59259abb6b67e42248b2f49004b7d5",
+  "verified_hub_revision": "ce0c479aaf59259abb6b67e42248b2f49004b7d5",
+  "status": "VERIFIED",
+  "upstream_files": {
+    ".gitattributes": {
+      "size": 2358,
+      "blob_id": "7d5e74a464cdb3e311b36e20e08adcaf0477d599",
+      "lfs": null
+    },
+    "README.md": {
+      "size": 2421,
+      "blob_id": "6afe679f31b284ac3fcaf93cfb63927ec6557591",
+      "lfs": null
+    },
+    "summedits.json": {
+      "size": 28633895,
+      "blob_id": "7fb17080c0ec37d090ec97c6f171dac876167d02",
+      "lfs": {
+        "size": 28633895,
+        "sha256": "21e34593330020d02b7d92f4651fdcc550f7d79a2f899392f106fd816c215a89",
+        "pointer_size": 133
+      }
+    }
+  },
+  "scientific_data_changed": false,
+  "freeze_changed": false,
+  "inference_calls": 0
+}

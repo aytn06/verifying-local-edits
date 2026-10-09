@@ -1,0 +1,9 @@
+{
+  "results_complete": true,
+  "planned_calls": 720,
+  "completed_projected_calls": 720,
+  "frozen_request_equivalence_verified": 720,
+  "freeze_original_sha256": "28d7808068dba970301c69187b8bdc3909000e1d28c037e953c5b8c5b22dc68f",
+  "original_scientific_artifacts_unchanged": true,
+  "published": false
+}

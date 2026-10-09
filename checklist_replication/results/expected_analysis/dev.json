@@ -1,0 +1,817 @@
+{
+  "study": "checklist_replication_v1",
+  "split": "dev",
+  "cases": 20,
+  "source_groups": 10,
+  "source_group_order": [
+    "04366fe089022826f2b639485f7f2529c7edab033a47a80e677b56df611aff12",
+    "22d9a314c37515b3ccb16a559622cda9602b7848ab22752c933f0ac037a8e8d3",
+    "23e8b53879a9857f24a1f6d09f2d9882ee2d1e214bcafce7be6fc5ecbc9a7d7b",
+    "2a0b70a33ffe399e5b936d3e3a3e823afaf5af5da7f1b8d8ba5df7c24dc0d4d3",
+    "473e0f3838450da6e591fe3d2299ac0b7ec12a3b3ea087b2fc32f1da11605506",
+    "540ef23aa9b14fb5b0a23742a7629ac0212976e7f6bc5f6aec11137a765a27cf",
+    "5ed067acd06f9b2f6e28568db88a92e50d85c0db12dc31ba8ea45c405996e93c",
+    "7da8c0bc5009ab959476cef838959bcbdfb2189086c6909a046349e02205846d",
+    "9e8d1c8261b9566f0850f9117c18384e0188ceb92e4e35d106bbad387a56c50f",
+    "f2c6c4ae84cd8c777d19ab9830ec94b9a99ef8e1dea25a76a7de85b4799e4f07"
+  ],
+  "model_calls": 120,
+  "conditions": [
+    {
+      "model": "qwen3_8b",
+      "condition": "matched",
+      "split": "dev",
+      "n": 20,
+      "source_groups": 10,
+      "n_valid": 10,
+      "n_invalid": 10,
+      "correct": 16,
+      "invalid_accept_count": 3,
+      "valid_reject_count": 1,
+      "malformed_count": 0,
+      "length_terminated_calls": 0,
+      "model_calls": 20,
+      "usage_complete": true,
+      "incomplete_usage_calls": 0,
+      "token_total_input": 17699,
+      "token_total_output": 120,
+      "token_total": 17819,
+      "seconds_total_unrounded": 201.67939229262993,
+      "known_input_tokens_lower_bound": 17699,
+      "known_output_tokens_lower_bound": 120,
+      "known_generation_seconds_lower_bound": 201.67939229262993,
+      "finish_reason_counts": {
+        "stop": 20
+      },
+      "accuracy": 0.8,
+      "accuracy_source_cluster_bootstrap_95": [
+        0.65,
+        0.95
+      ],
+      "invalid_accept_rate": 0.3,
+      "invalid_accept_rate_source_cluster_bootstrap_95": [
+        0.0,
+        0.6
+      ],
+      "valid_reject_rate": 0.1,
+      "valid_reject_rate_source_cluster_bootstrap_95": [
+        0.0,
+        0.3
+      ],
+      "strict_accuracy": 0.8
+    },
+    {
+      "model": "qwen3_8b",
+      "condition": "matched_checklist",
+      "split": "dev",
+      "n": 20,
+      "source_groups": 10,
+      "n_valid": 10,
+      "n_invalid": 10,
+      "correct": 16,
+      "invalid_accept_count": 3,
+      "valid_reject_count": 1,
+      "malformed_count": 0,
+      "length_terminated_calls": 0,
+      "model_calls": 20,
+      "usage_complete": true,
+      "incomplete_usage_calls": 0,
+      "token_total_input": 18499,
+      "token_total_output": 120,
+      "token_total": 18619,
+      "seconds_total_unrounded": 212.95263837557286,
+      "known_input_tokens_lower_bound": 18499,
+      "known_output_tokens_lower_bound": 120,
+      "known_generation_seconds_lower_bound": 212.95263837557286,
+      "finish_reason_counts": {
+        "stop": 20
+      },
+      "accuracy": 0.8,
+      "accuracy_source_cluster_bootstrap_95": [
+        0.65,
+        0.95
+      ],
+      "invalid_accept_rate": 0.3,
+      "invalid_accept_rate_source_cluster_bootstrap_95": [
+        0.0,
+        0.6
+      ],
+      "valid_reject_rate": 0.1,
+      "valid_reject_rate_source_cluster_bootstrap_95": [
+        0.0,
+        0.3
+      ],
+      "strict_accuracy": 0.8
+    },
+    {
+      "model": "qwen3_8b",
+      "condition": "delta_prompt",
+      "split": "dev",
+      "n": 20,
+      "source_groups": 10,
+      "n_valid": 10,
+      "n_invalid": 10,
+      "correct": 16,
+      "invalid_accept_count": 2,
+      "valid_reject_count": 2,
+      "malformed_count": 0,
+      "length_terminated_calls": 0,
+      "model_calls": 20,
+      "usage_complete": true,
+      "incomplete_usage_calls": 0,
+      "token_total_input": 18239,
+      "token_total_output": 120,
+      "token_total": 18359,
+      "seconds_total_unrounded": 193.19242783030495,
+      "known_input_tokens_lower_bound": 18239,
+      "known_output_tokens_lower_bound": 120,
+      "known_generation_seconds_lower_bound": 193.19242783030495,
+      "finish_reason_counts": {
+        "stop": 20
+      },
+      "accuracy": 0.8,
+      "accuracy_source_cluster_bootstrap_95": [
+        0.65,
+        0.95
+      ],
+      "invalid_accept_rate": 0.2,
+      "invalid_accept_rate_source_cluster_bootstrap_95": [
+        0.0,
+        0.5
+      ],
+      "valid_reject_rate": 0.2,
+      "valid_reject_rate_source_cluster_bootstrap_95": [
+        0.0,
+        0.5
+      ],
+      "strict_accuracy": 0.8
+    },
+    {
+      "model": "llama32_3b",
+      "condition": "matched",
+      "split": "dev",
+      "n": 20,
+      "source_groups": 10,
+      "n_valid": 10,
+      "n_invalid": 10,
+      "correct": 11,
+      "invalid_accept_count": 0,
+      "valid_reject_count": 9,
+      "malformed_count": 0,
+      "length_terminated_calls": 0,
+      "model_calls": 20,
+      "usage_complete": true,
+      "incomplete_usage_calls": 0,
+      "token_total_input": 17620,
+      "token_total_output": 120,
+      "token_total": 17740,
+      "seconds_total_unrounded": 82.66070341737941,
+      "known_input_tokens_lower_bound": 17620,
+      "known_output_tokens_lower_bound": 120,
+      "known_generation_seconds_lower_bound": 82.66070341737941,
+      "finish_reason_counts": {
+        "stop": 20
+      },
+      "accuracy": 0.55,
+      "accuracy_source_cluster_bootstrap_95": [
+        0.5,
+        0.65
+      ],
+      "invalid_accept_rate": 0.0,
+      "invalid_accept_rate_source_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "valid_reject_rate": 0.9,
+      "valid_reject_rate_source_cluster_bootstrap_95": [
+        0.7,
+        1.0
+      ],
+      "strict_accuracy": 0.55
+    },
+    {
+      "model": "llama32_3b",
+      "condition": "matched_checklist",
+      "split": "dev",
+      "n": 20,
+      "source_groups": 10,
+      "n_valid": 10,
+      "n_invalid": 10,
+      "correct": 13,
+      "invalid_accept_count": 0,
+      "valid_reject_count": 7,
+      "malformed_count": 0,
+      "length_terminated_calls": 0,
+      "model_calls": 20,
+      "usage_complete": true,
+      "incomplete_usage_calls": 0,
+      "token_total_input": 18420,
+      "token_total_output": 120,
+      "token_total": 18540,
+      "seconds_total_unrounded": 84.39437208371237,
+      "known_input_tokens_lower_bound": 18420,
+      "known_output_tokens_lower_bound": 120,
+      "known_generation_seconds_lower_bound": 84.39437208371237,
+      "finish_reason_counts": {
+        "stop": 20
+      },
+      "accuracy": 0.65,
+      "accuracy_source_cluster_bootstrap_95": [
+        0.5,
+        0.8
+      ],
+      "invalid_accept_rate": 0.0,
+      "invalid_accept_rate_source_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "valid_reject_rate": 0.7,
+      "valid_reject_rate_source_cluster_bootstrap_95": [
+        0.4,
+        1.0
+      ],
+      "strict_accuracy": 0.65
+    },
+    {
+      "model": "llama32_3b",
+      "condition": "delta_prompt",
+      "split": "dev",
+      "n": 20,
+      "source_groups": 10,
+      "n_valid": 10,
+      "n_invalid": 10,
+      "correct": 10,
+      "invalid_accept_count": 0,
+      "valid_reject_count": 10,
+      "malformed_count": 0,
+      "length_terminated_calls": 0,
+      "model_calls": 20,
+      "usage_complete": true,
+      "incomplete_usage_calls": 0,
+      "token_total_input": 18160,
+      "token_total_output": 120,
+      "token_total": 18280,
+      "seconds_total_unrounded": 83.95342320529744,
+      "known_input_tokens_lower_bound": 18160,
+      "known_output_tokens_lower_bound": 120,
+      "known_generation_seconds_lower_bound": 83.95342320529744,
+      "finish_reason_counts": {
+        "stop": 20
+      },
+      "accuracy": 0.5,
+      "accuracy_source_cluster_bootstrap_95": [
+        0.5,
+        0.5
+      ],
+      "invalid_accept_rate": 0.0,
+      "invalid_accept_rate_source_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "valid_reject_rate": 1.0,
+      "valid_reject_rate_source_cluster_bootstrap_95": [
+        1.0,
+        1.0
+      ],
+      "strict_accuracy": 0.5
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "model": "qwen3_8b",
+      "first": "delta_prompt",
+      "second": "matched_checklist",
+      "metric": "accuracy",
+      "scope": "primary",
+      "source_groups": 10,
+      "eligible_rows": 20,
+      "first_minus_second_rate": 0.0,
+      "source_cluster_bootstrap_95": [
+        -0.15,
+        0.15
+      ],
+      "source_randomization": {
+        "p_two_sided_unadjusted": 1.0,
+        "extreme_draws": 100000,
+        "repetitions": 100000,
+        "seed": 20261009,
+        "source_groups": 10,
+        "observed_correct_count_difference": 0
+      },
+      "multiplicity": "Holm over two model primary accuracy tests",
+      "p_holm_two_model_primary": 1.0
+    },
+    {
+      "model": "qwen3_8b",
+      "first": "delta_prompt",
+      "second": "matched_checklist",
+      "metric": "invalid_accept_rate",
+      "scope": "secondary",
+      "source_groups": 10,
+      "eligible_rows": 10,
+      "first_minus_second_rate": -0.1,
+      "source_cluster_bootstrap_95": [
+        -0.3,
+        0.0
+      ]
+    },
+    {
+      "model": "qwen3_8b",
+      "first": "delta_prompt",
+      "second": "matched_checklist",
+      "metric": "valid_reject_rate",
+      "scope": "secondary",
+      "source_groups": 10,
+      "eligible_rows": 10,
+      "first_minus_second_rate": 0.1,
+      "source_cluster_bootstrap_95": [
+        0.0,
+        0.3
+      ]
+    },
+    {
+      "model": "qwen3_8b",
+      "first": "delta_prompt",
+      "second": "matched",
+      "metric": "accuracy",
+      "scope": "secondary",
+      "source_groups": 10,
+      "eligible_rows": 20,
+      "first_minus_second_rate": 0.0,
+      "source_cluster_bootstrap_95": [
+        -0.15,
+        0.15
+      ],
+      "source_randomization": {
+        "p_two_sided_unadjusted": 1.0,
+        "extreme_draws": 100000,
+        "repetitions": 100000,
+        "seed": 20261009,
+        "source_groups": 10,
+        "observed_correct_count_difference": 0
+      },
+      "multiplicity": "exploratory unadjusted"
+    },
+    {
+      "model": "qwen3_8b",
+      "first": "delta_prompt",
+      "second": "matched",
+      "metric": "invalid_accept_rate",
+      "scope": "secondary",
+      "source_groups": 10,
+      "eligible_rows": 10,
+      "first_minus_second_rate": -0.1,
+      "source_cluster_bootstrap_95": [
+        -0.3,
+        0.0
+      ]
+    },
+    {
+      "model": "qwen3_8b",
+      "first": "delta_prompt",
+      "second": "matched",
+      "metric": "valid_reject_rate",
+      "scope": "secondary",
+      "source_groups": 10,
+      "eligible_rows": 10,
+      "first_minus_second_rate": 0.1,
+      "source_cluster_bootstrap_95": [
+        0.0,
+        0.3
+      ]
+    },
+    {
+      "model": "qwen3_8b",
+      "first": "matched_checklist",
+      "second": "matched",
+      "metric": "accuracy",
+      "scope": "secondary",
+      "source_groups": 10,
+      "eligible_rows": 20,
+      "first_minus_second_rate": 0.0,
+      "source_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "source_randomization": {
+        "p_two_sided_unadjusted": 1.0,
+        "extreme_draws": 100000,
+        "repetitions": 100000,
+        "seed": 20261009,
+        "source_groups": 10,
+        "observed_correct_count_difference": 0
+      },
+      "multiplicity": "exploratory unadjusted"
+    },
+    {
+      "model": "qwen3_8b",
+      "first": "matched_checklist",
+      "second": "matched",
+      "metric": "invalid_accept_rate",
+      "scope": "secondary",
+      "source_groups": 10,
+      "eligible_rows": 10,
+      "first_minus_second_rate": 0.0,
+      "source_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "model": "qwen3_8b",
+      "first": "matched_checklist",
+      "second": "matched",
+      "metric": "valid_reject_rate",
+      "scope": "secondary",
+      "source_groups": 10,
+      "eligible_rows": 10,
+      "first_minus_second_rate": 0.0,
+      "source_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "model": "llama32_3b",
+      "first": "delta_prompt",
+      "second": "matched_checklist",
+      "metric": "accuracy",
+      "scope": "primary",
+      "source_groups": 10,
+      "eligible_rows": 20,
+      "first_minus_second_rate": -0.15,
+      "source_cluster_bootstrap_95": [
+        -0.3,
+        0.0
+      ],
+      "source_randomization": {
+        "p_two_sided_unadjusted": 0.25052749472505276,
+        "extreme_draws": 25052,
+        "repetitions": 100000,
+        "seed": 20261009,
+        "source_groups": 10,
+        "observed_correct_count_difference": -3
+      },
+      "multiplicity": "Holm over two model primary accuracy tests",
+      "p_holm_two_model_primary": 0.5010549894501055
+    },
+    {
+      "model": "llama32_3b",
+      "first": "delta_prompt",
+      "second": "matched_checklist",
+      "metric": "invalid_accept_rate",
+      "scope": "secondary",
+      "source_groups": 10,
+      "eligible_rows": 10,
+      "first_minus_second_rate": 0.0,
+      "source_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "model": "llama32_3b",
+      "first": "delta_prompt",
+      "second": "matched_checklist",
+      "metric": "valid_reject_rate",
+      "scope": "secondary",
+      "source_groups": 10,
+      "eligible_rows": 10,
+      "first_minus_second_rate": 0.3,
+      "source_cluster_bootstrap_95": [
+        0.0,
+        0.6
+      ]
+    },
+    {
+      "model": "llama32_3b",
+      "first": "delta_prompt",
+      "second": "matched",
+      "metric": "accuracy",
+      "scope": "secondary",
+      "source_groups": 10,
+      "eligible_rows": 20,
+      "first_minus_second_rate": -0.05,
+      "source_cluster_bootstrap_95": [
+        -0.15,
+        0.0
+      ],
+      "source_randomization": {
+        "p_two_sided_unadjusted": 1.0,
+        "extreme_draws": 100000,
+        "repetitions": 100000,
+        "seed": 20261009,
+        "source_groups": 10,
+        "observed_correct_count_difference": -1
+      },
+      "multiplicity": "exploratory unadjusted"
+    },
+    {
+      "model": "llama32_3b",
+      "first": "delta_prompt",
+      "second": "matched",
+      "metric": "invalid_accept_rate",
+      "scope": "secondary",
+      "source_groups": 10,
+      "eligible_rows": 10,
+      "first_minus_second_rate": 0.0,
+      "source_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "model": "llama32_3b",
+      "first": "delta_prompt",
+      "second": "matched",
+      "metric": "valid_reject_rate",
+      "scope": "secondary",
+      "source_groups": 10,
+      "eligible_rows": 10,
+      "first_minus_second_rate": 0.1,
+      "source_cluster_bootstrap_95": [
+        0.0,
+        0.3
+      ]
+    },
+    {
+      "model": "llama32_3b",
+      "first": "matched_checklist",
+      "second": "matched",
+      "metric": "accuracy",
+      "scope": "secondary",
+      "source_groups": 10,
+      "eligible_rows": 20,
+      "first_minus_second_rate": 0.1,
+      "source_cluster_bootstrap_95": [
+        0.0,
+        0.25
+      ],
+      "source_randomization": {
+        "p_two_sided_unadjusted": 0.5005649943500565,
+        "extreme_draws": 50056,
+        "repetitions": 100000,
+        "seed": 20261009,
+        "source_groups": 10,
+        "observed_correct_count_difference": 2
+      },
+      "multiplicity": "exploratory unadjusted"
+    },
+    {
+      "model": "llama32_3b",
+      "first": "matched_checklist",
+      "second": "matched",
+      "metric": "invalid_accept_rate",
+      "scope": "secondary",
+      "source_groups": 10,
+      "eligible_rows": 10,
+      "first_minus_second_rate": 0.0,
+      "source_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "model": "llama32_3b",
+      "first": "matched_checklist",
+      "second": "matched",
+      "metric": "valid_reject_rate",
+      "scope": "secondary",
+      "source_groups": 10,
+      "eligible_rows": 10,
+      "first_minus_second_rate": -0.2,
+      "source_cluster_bootstrap_95": [
+        -0.5,
+        0.0
+      ]
+    }
+  ],
+  "disagreements": [
+    {
+      "model": "qwen3_8b",
+      "case_id": "billsum_train_16615_1",
+      "source_group": "04366fe089022826f2b639485f7f2529c7edab033a47a80e677b56df611aff12",
+      "label": 0,
+      "first": "delta_prompt",
+      "second": "matched_checklist",
+      "first_verdict": "no",
+      "second_verdict": "yes",
+      "first_parse_error": null,
+      "second_parse_error": null,
+      "first_correct": 1,
+      "second_correct": 0,
+      "correct_difference": 1,
+      "first_input_tokens": 1771,
+      "first_output_tokens": 6,
+      "first_seconds_unrounded": 20.802942124661058,
+      "second_input_tokens": 1784,
+      "second_output_tokens": 6,
+      "second_seconds_unrounded": 21.420283125247806
+    },
+    {
+      "model": "qwen3_8b",
+      "case_id": "ectsum_CMC_q3_2021_13",
+      "source_group": "23e8b53879a9857f24a1f6d09f2d9882ee2d1e214bcafce7be6fc5ecbc9a7d7b",
+      "label": 1,
+      "first": "delta_prompt",
+      "second": "matched_checklist",
+      "first_verdict": "no",
+      "second_verdict": "yes",
+      "first_parse_error": null,
+      "second_parse_error": null,
+      "first_correct": 0,
+      "second_correct": 1,
+      "correct_difference": -1,
+      "first_input_tokens": 483,
+      "first_output_tokens": 6,
+      "first_seconds_unrounded": 5.307593540754169,
+      "second_input_tokens": 496,
+      "second_output_tokens": 6,
+      "second_seconds_unrounded": 5.258096291217953
+    },
+    {
+      "model": "qwen3_8b",
+      "case_id": "billsum_train_16615_1",
+      "source_group": "04366fe089022826f2b639485f7f2529c7edab033a47a80e677b56df611aff12",
+      "label": 0,
+      "first": "delta_prompt",
+      "second": "matched",
+      "first_verdict": "no",
+      "second_verdict": "yes",
+      "first_parse_error": null,
+      "second_parse_error": null,
+      "first_correct": 1,
+      "second_correct": 0,
+      "correct_difference": 1,
+      "first_input_tokens": 1771,
+      "first_output_tokens": 6,
+      "first_seconds_unrounded": 20.802942124661058,
+      "second_input_tokens": 1744,
+      "second_output_tokens": 6,
+      "second_seconds_unrounded": 22.537018166854978
+    },
+    {
+      "model": "qwen3_8b",
+      "case_id": "ectsum_CMC_q3_2021_13",
+      "source_group": "23e8b53879a9857f24a1f6d09f2d9882ee2d1e214bcafce7be6fc5ecbc9a7d7b",
+      "label": 1,
+      "first": "delta_prompt",
+      "second": "matched",
+      "first_verdict": "no",
+      "second_verdict": "yes",
+      "first_parse_error": null,
+      "second_parse_error": null,
+      "first_correct": 0,
+      "second_correct": 1,
+      "correct_difference": -1,
+      "first_input_tokens": 483,
+      "first_output_tokens": 6,
+      "first_seconds_unrounded": 5.307593540754169,
+      "second_input_tokens": 456,
+      "second_output_tokens": 6,
+      "second_seconds_unrounded": 5.031724417116493
+    },
+    {
+      "model": "llama32_3b",
+      "case_id": "billsum_train_16615_6",
+      "source_group": "04366fe089022826f2b639485f7f2529c7edab033a47a80e677b56df611aff12",
+      "label": 1,
+      "first": "delta_prompt",
+      "second": "matched_checklist",
+      "first_verdict": "no",
+      "second_verdict": "yes",
+      "first_parse_error": null,
+      "second_parse_error": null,
+      "first_correct": 0,
+      "second_correct": 1,
+      "correct_difference": -1,
+      "first_input_tokens": 1791,
+      "first_output_tokens": 6,
+      "first_seconds_unrounded": 7.4396862499415874,
+      "second_input_tokens": 1804,
+      "second_output_tokens": 6,
+      "second_seconds_unrounded": 7.72404925012961
+    },
+    {
+      "model": "llama32_3b",
+      "case_id": "ectsum_CMC_q3_2021_13",
+      "source_group": "23e8b53879a9857f24a1f6d09f2d9882ee2d1e214bcafce7be6fc5ecbc9a7d7b",
+      "label": 1,
+      "first": "delta_prompt",
+      "second": "matched_checklist",
+      "first_verdict": "no",
+      "second_verdict": "yes",
+      "first_parse_error": null,
+      "second_parse_error": null,
+      "first_correct": 0,
+      "second_correct": 1,
+      "correct_difference": -1,
+      "first_input_tokens": 476,
+      "first_output_tokens": 6,
+      "first_seconds_unrounded": 2.3064569160342216,
+      "second_input_tokens": 489,
+      "second_output_tokens": 6,
+      "second_seconds_unrounded": 2.48534291703254
+    },
+    {
+      "model": "llama32_3b",
+      "case_id": "shakespeare_4_1",
+      "source_group": "473e0f3838450da6e591fe3d2299ac0b7ec12a3b3ea087b2fc32f1da11605506",
+      "label": 1,
+      "first": "delta_prompt",
+      "second": "matched_checklist",
+      "first_verdict": "no",
+      "second_verdict": "yes",
+      "first_parse_error": null,
+      "second_parse_error": null,
+      "first_correct": 0,
+      "second_correct": 1,
+      "correct_difference": -1,
+      "first_input_tokens": 1826,
+      "first_output_tokens": 6,
+      "first_seconds_unrounded": 8.061292958911508,
+      "second_input_tokens": 1839,
+      "second_output_tokens": 6,
+      "second_seconds_unrounded": 7.540941708255559
+    },
+    {
+      "model": "llama32_3b",
+      "case_id": "billsum_train_16615_6",
+      "source_group": "04366fe089022826f2b639485f7f2529c7edab033a47a80e677b56df611aff12",
+      "label": 1,
+      "first": "delta_prompt",
+      "second": "matched",
+      "first_verdict": "no",
+      "second_verdict": "yes",
+      "first_parse_error": null,
+      "second_parse_error": null,
+      "first_correct": 0,
+      "second_correct": 1,
+      "correct_difference": -1,
+      "first_input_tokens": 1791,
+      "first_output_tokens": 6,
+      "first_seconds_unrounded": 7.4396862499415874,
+      "second_input_tokens": 1764,
+      "second_output_tokens": 6,
+      "second_seconds_unrounded": 8.601209708023816
+    },
+    {
+      "model": "llama32_3b",
+      "case_id": "ectsum_CMC_q3_2021_13",
+      "source_group": "23e8b53879a9857f24a1f6d09f2d9882ee2d1e214bcafce7be6fc5ecbc9a7d7b",
+      "label": 1,
+      "first": "matched_checklist",
+      "second": "matched",
+      "first_verdict": "yes",
+      "second_verdict": "no",
+      "first_parse_error": null,
+      "second_parse_error": null,
+      "first_correct": 1,
+      "second_correct": 0,
+      "correct_difference": 1,
+      "first_input_tokens": 489,
+      "first_output_tokens": 6,
+      "first_seconds_unrounded": 2.48534291703254,
+      "second_input_tokens": 449,
+      "second_output_tokens": 6,
+      "second_seconds_unrounded": 2.0547767081297934
+    },
+    {
+      "model": "llama32_3b",
+      "case_id": "shakespeare_4_1",
+      "source_group": "473e0f3838450da6e591fe3d2299ac0b7ec12a3b3ea087b2fc32f1da11605506",
+      "label": 1,
+      "first": "matched_checklist",
+      "second": "matched",
+      "first_verdict": "yes",
+      "second_verdict": "no",
+      "first_parse_error": null,
+      "second_parse_error": null,
+      "first_correct": 1,
+      "second_correct": 0,
+      "correct_difference": 1,
+      "first_input_tokens": 1839,
+      "first_output_tokens": 6,
+      "first_seconds_unrounded": 7.540941708255559,
+      "second_input_tokens": 1799,
+      "second_output_tokens": 6,
+      "second_seconds_unrounded": 7.542275957763195
+    }
+  ],
+  "analysis_plan": {
+    "primary": "Delta-prompt minus matched_checklist accuracy, separately in each of two prespecified models",
+    "unit": "normalized source; retain its valid/invalid pair and all six model-condition outcomes per candidate",
+    "point_weighting": "micro-average across candidates; equals equal-source macro-average because each source has exactly one row per label",
+    "bootstrap": "unstratified paired source resampling with replacement; same source indices across all models/conditions/metrics",
+    "bootstrap_repetitions": 10000,
+    "seed": 20261009,
+    "percentile_endpoints": "sorted_draws[int(q*(B-1))] at q=.025,.975",
+    "randomization": "two-sided whole-source method-label swaps for accuracy; fixed common sign vector per draw; plus-one Monte Carlo p",
+    "randomization_repetitions": 100000,
+    "multiplicity": "Holm correction across the two prespecified model primary accuracy p-values only; secondary contrasts exploratory/unadjusted; no pooled cross-model test",
+    "development_status": "Development checks execution and formatting only; all prompts/settings frozen before any inference; no tuning or method selection.",
+    "interval_scope": "conditional descriptive source-cluster intervals for selected source sample; no domain-level generalization, multiplicity-adjusted CI, or randomized causal claim",
+    "cost_scope": "all recorded calls; output tokens exclude EOS by collection contract; unknown usage stays unknown, with known lower bounds",
+    "label_policy": "Original benchmark labels only; label-review flags never used to rescore"
+  }
+}

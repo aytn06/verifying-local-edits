@@ -1,0 +1,426 @@
+{
+  "ablation_runner_sha256": "d73526e2506d13e755c03ad7ca9021e40aa058cc288c66f50f15d2a3467629f2",
+  "api_spend_usd": 0,
+  "case_ids": [
+    "b01_c01",
+    "b01_c02",
+    "b01_c03",
+    "b01_c04",
+    "b01_c05",
+    "b01_c06",
+    "b02_c01",
+    "b02_c02",
+    "b02_c03",
+    "b02_c04",
+    "b02_c05",
+    "b02_c06",
+    "b03_c01",
+    "b03_c02",
+    "b03_c03",
+    "b03_c04",
+    "b03_c05",
+    "b03_c06",
+    "b04_c01",
+    "b04_c02",
+    "b04_c03",
+    "b04_c04",
+    "b04_c05",
+    "b04_c06",
+    "b05_c01",
+    "b05_c02",
+    "b05_c03",
+    "b05_c04",
+    "b05_c05",
+    "b05_c06",
+    "b06_c01",
+    "b06_c02",
+    "b06_c03",
+    "b06_c04",
+    "b06_c05",
+    "b06_c06",
+    "b07_c01",
+    "b07_c02",
+    "b07_c03",
+    "b07_c04",
+    "b07_c05",
+    "b07_c06",
+    "b08_c01",
+    "b08_c02",
+    "b08_c03",
+    "b08_c04",
+    "b08_c05",
+    "b08_c06"
+  ],
+  "comparison_condition": "whole_factual",
+  "condition_id": "whole_factual_without_e6",
+  "config": {
+    "base_seed": 311905,
+    "batch_size": 4,
+    "max_tokens": 128,
+    "repetitions": 1,
+    "retry_count": 0,
+    "temperature": 0.0,
+    "top_k": 0,
+    "top_p": 1.0
+  },
+  "decision_basis": "six-case primary development smoke showed factual-whole rejection of factually true ordering violations; no primary evaluation outputs informed this design",
+  "experiment": "controlled_rule_ablation_v1",
+  "human_labels": 0,
+  "hypothesis_scope": "paired sensitivity of factual-only verdicts to the irrelevant explicit E6 ordering instruction; rationale and causal mechanism inside the model remain unobserved",
+  "invariants": "same complete candidate, E0-E5, system/instruction, tokenizer, model, greedy128 budget and parser; only E6 removed; no retries",
+  "labels": "unchanged construction-based factual labels; no human judgments or audience-expectation labels",
+  "messages_sha256": {
+    "b01_c01": "bcfa63d0f6ec301bbe1d9e88c7c069c20703f65209a98661d28519ac0fc476d3",
+    "b01_c02": "6b52f416f747ec09b58fd14e93b7ded8d7eaf201630fcfbabeb28f461f89e605",
+    "b01_c03": "ee771cef8c98ae353456a346b3b74c74612d9f9d182f4e87fc5187abd7b7bac0",
+    "b01_c04": "2c828560f2c261f4808904544af08ebcfd947950f7212b809fd1c373100c5cb9",
+    "b01_c05": "9b961631e279c3e039072f6e9340104215a2d30cc488839323b7745edcca604a",
+    "b01_c06": "033aae7679e123f40b6d055933fb805c9d55d37a2bbde69be9ea5c993cded0e4",
+    "b02_c01": "f2b2f2263f19458d6c6edbf98321310929b537b54a5514c08c70eded5917dcd6",
+    "b02_c02": "fa79cbd59ccb2fd0aeaf78e9baa3e53533a034fde25494a192bc52499a0f52d5",
+    "b02_c03": "0bfe6027cda5aa838b48f44dff2120f300574d6c4a3edf40a2559806105eaccd",
+    "b02_c04": "6572259eb8f44c2aab9aaaf5e3bfcabdbb30cc0ee58628870e330391aeeda9a0",
+    "b02_c05": "f41730704d2c4006bcd31718fa7a7f777a94bb9c650c253d5c127f9a4619696b",
+    "b02_c06": "95351390a01295a7b246c8e002de5a1cf173c2e51faabf14381c42811efb177e",
+    "b03_c01": "3be474ae877770d464abd04ab3f9f4770288f6a215eac752fcbfdbf4a0470ada",
+    "b03_c02": "5a43e0ee945e8f49cb07ac74e50def3f6dfc4b215fd1e222528a0dd51703e285",
+    "b03_c03": "bded1b8b0a601c8f3d4838436e22028186a749a6afb03657934de8fbd1824993",
+    "b03_c04": "cd6c72b27703ec45d3f61dc6d79585d77efd9710f85974ff8f551216242210e3",
+    "b03_c05": "2fb14438955ff83eb2fb2e4c3c42f674b42fe84572c03009af9ccc7c0137203b",
+    "b03_c06": "d8e0bb5955135af54dfc27eff27b0c9f79c82718d24d958a01483c5c68b7359f",
+    "b04_c01": "bfa9c0fcf40c5caff7561b6466ce7db9042218124eba51c0475bc4cb99076b12",
+    "b04_c02": "545a52178e6cd45e3a0b05bd92a145db4ee6a2116b45a6acbc92334ba5f24139",
+    "b04_c03": "b5c5d5d9b58e9e96c89200b35dcaf993493cfc8c81c91855b1fc62fedb36be3a",
+    "b04_c04": "f0808d85eedcaf7c6f7d16279b32dd67d5e399a0f1c141b7c86305db83701cab",
+    "b04_c05": "ad724c92af24705d3ad52ce721dfa582bd98476864930ec2488caf72b6588525",
+    "b04_c06": "660d72bb38a27ef4e1fa5b98ada3cb5166b4529bf8e6b411dfeea01761a01ec0",
+    "b05_c01": "498301cfa67e37ce5ba8261baa512b6323f736e962962ded59b12440b1a17400",
+    "b05_c02": "687dbea12d16165e5b8edaa913ea123774654dcfd152e5cc4678fbc35429c3f9",
+    "b05_c03": "03ea1e907aad3f62cdac38538c1afdce8135dbce653b939ab37670635baa973e",
+    "b05_c04": "bfe5cf5cae9c41f0f2a4d1b13a716a8b9a25358e269e225870531ab24235379b",
+    "b05_c05": "8f275cd67058da2090b3a1114261a9afe1e5a4ed421f4aa26f6eb46058d5879e",
+    "b05_c06": "238b88bc4cc87cfe1b79c2de2b856fb7b6e4eb3ceb6dc2c0525ce9e704f532e7",
+    "b06_c01": "291da790cc32c4263256325f155720748777183e97bc4389dffd4a5a3adb9580",
+    "b06_c02": "8d9e52642b712875abf569509eeca073619a2e80e1539817a24e28890bdb8dc2",
+    "b06_c03": "16e03c26348880c5ea93e2e820ab6de0a55969bdb5f9d7587f4b339026032258",
+    "b06_c04": "faaa2bf3021be1e69aac9056c4bfac2d2e5952124e7f134c399fa8d324fe6d65",
+    "b06_c05": "2b6211950d0ed0476aa8afbb6b7ddc63a624406dba120ff48358a320d5bdb23f",
+    "b06_c06": "8a71325c7d17a3953585a2c327ccff2813a3fd7b086147fa76ee364adfdc5416",
+    "b07_c01": "46d4c90a063ae2ece48edcd762e8b99f23b0abcfc3242132a2630d959425aa00",
+    "b07_c02": "7c205525f7a59917fcc8669aa129834c844f21d9c2a688dd1c23f9d2690550b6",
+    "b07_c03": "fb8861309a11908189a0f9e27ad51122233fbc03ad57a701444745e60487e752",
+    "b07_c04": "4629b028cd840870fafdc4faa71833882693f57520a982abb6cd7f45ad798e36",
+    "b07_c05": "b4b4bbc78c2a536c154fa1a9dadc3c67876b4340030c1f7ea94c8d5c84d6f73f",
+    "b07_c06": "713e41430b499588c968b536ec63342cd0f57a25a5f2b2bf9fc7c1d85a412ea2",
+    "b08_c01": "433f6b6cb05cceddbc1e1e35871c514faeeedf459e71c844ad0b1748caed35e7",
+    "b08_c02": "63ed33eb013d7b46b816767c4b202200d26ac5fdc0a852903abb77e5e9a1f501",
+    "b08_c03": "5429a6820b8c33c690a5db356e7a835ec720c28b11674df5bee388bf5d931fc2",
+    "b08_c04": "83a3c55c7da6b51b7483dd50632bb6ceb231cf7ad20ea1f3850f963279e07000",
+    "b08_c05": "32a031f8dfd6658d265884a2f9bcf2fbb7a77f19069da0b3bac37247ffa9419b",
+    "b08_c06": "5c85a10d205677c3a66de24b744b9e02c4fe0a80336cf417b70490b41b6ec338"
+  },
+  "model_key": "qwen3_8b",
+  "model_spec": {
+    "model_id": "Qwen/Qwen3-8B-MLX-4bit",
+    "revision": "383413e909f3bc5303ce195ebbdf0339c5a1a2a3",
+    "weight_sha256": "fcc83d7537bee76cc143be3e25f8954b816798f93528103db1cddb02977c5617"
+  },
+  "original_case_sha256": {
+    "b01_c01": "80367897395f77e8da8726024bec3141cd43066586f053349869c70dfc2af436",
+    "b01_c02": "6daafd5fae88f73aca656357fb32cdb7a8c5c4f9f2a87b2ef686a0ad9e3f3d24",
+    "b01_c03": "f666098ca8a1ca4d7ddb50de22c9aea672af4e41802996c3671bb0f8cc7c6644",
+    "b01_c04": "0a7c54d03d2ab4dee8e97241d4db18da6c164788f54ae3c46889f03da34d363b",
+    "b01_c05": "24d4c8e2abe377cb9dc057e2311585bad8eacb08977b788b2dba1c7a151e69f0",
+    "b01_c06": "52914301be856e47e2015c6af2bbf22b7e2a3c47f0457880d5175848cf208ba1",
+    "b02_c01": "3103a1abf8379af82fa202118998033fd0b7601e5c29330adb0ebc8b02d500c1",
+    "b02_c02": "6746ae258ec9757b79588a25796ddcb6fd6122be9a1e3f6c2a5205313cc1a10f",
+    "b02_c03": "4ce04f57c4c8e58ab2f6ee6feee2af5274faab2763aa34011d2c5e98d7b44c2f",
+    "b02_c04": "9691523a7ec95e3daa17584ba400ba22484e02a0fe7813eead7cfac43be555f6",
+    "b02_c05": "e0680e4a4fba695c152b2e57b4cdc990f46c18f81ad599a56a2b6aca4fab6e88",
+    "b02_c06": "55364ac95656e0154e8247a7faabb661e8fdd9b110bcf2b87e57dbb91a20417c",
+    "b03_c01": "595fe5421b6b9e842900b14b76404866b318b9bc777785f9d3e78345d2a797de",
+    "b03_c02": "0eb5b9ecf90cb857d781c7cbba02206de18984ee7eeb979e59b450f10c0e35cc",
+    "b03_c03": "3bce1cc10aaf4b861aa0c3a59c335b36779773f302e0b03066e7edc81b9f5c20",
+    "b03_c04": "cb4f0eeec492b228930c7f21710236010ac45574ffaa41e006e7ca4dd7d26396",
+    "b03_c05": "a4139a20b5c2c7f9cf4c1b501a66f4e47a1dc3a1329b242bfcb9baea2552a5ff",
+    "b03_c06": "d3cc1b7c0784c6fa19e0b9c9d8fd2cb39c29a7816a411de3b9ae473f5aa4e8d6",
+    "b04_c01": "e2f967f401500fcb5938548644a63c758e60a54e9f241891c97e3879e2221574",
+    "b04_c02": "1be47f23bac113c22f4f8a31ecd77fe6b96933ab2cc63eb9c2398fff6f5079c6",
+    "b04_c03": "2029f7f160e62de2dba6b266ce84ec3b59dd7d3e8438f73a9b5df42471a0629f",
+    "b04_c04": "85e16e92c84691fe89d0d66c285ee4387eaeb944a8d8f027637099229b86045b",
+    "b04_c05": "454c9486d55ba7c7a7fb975763057c22040dca2f4302fa3a6e09642c2929da88",
+    "b04_c06": "f9e5de8b51e285e41a573d17249a15e9d49ccf57f15f740db5d1d4babd36d5c0",
+    "b05_c01": "6653db70d1b15d6699d128466c996fa5a1aea69e6c36b73065d9340501ec4438",
+    "b05_c02": "1d2600de1fd317130aa9e54ab2077900ba50e391bd37d8cd401a9a410915acb3",
+    "b05_c03": "3d45321c35163fa73bede709cc453162bdc3449e72bade793a3e823b21ebb696",
+    "b05_c04": "decd7626d1731fba40d92ac50899c2f2fc34d45e5a4ac2eb246bc3cab88e5086",
+    "b05_c05": "3fe7a2cfdf2c4d3617fd9e9aec9af31f79467543470611b43bedbe0bbd51ffe0",
+    "b05_c06": "65bdce21e14bdd59c0079faf5e695ceaf5146eaccf3a50ebfa1d83653db5b7e0",
+    "b06_c01": "8b020f000bcd76a87a7900589bb7afb4c432ca23d9a9f329e3dea104d152d280",
+    "b06_c02": "a362b8d2cbafa416d72c49a651df18190e1a146f91a9b64b412f69dfe44c1949",
+    "b06_c03": "42bb860731ed2f12fd596d49ecd42d11cef4db156f7adc47f16bfd07eee8f095",
+    "b06_c04": "2ceff348d08915bf5fe18349ddfc1b49f5ea7675018f98b3a8dda0b6bdd20c54",
+    "b06_c05": "5c93702dfc400796535da389f3c8ef09b911131cbb333c58880844d2b3dabc97",
+    "b06_c06": "83dc256f2631ab160377dc3297740696751e632125e0f5027cf71f9edc6154fe",
+    "b07_c01": "c4a63fda29604a495319e6eb307a50cc7d6be628857db84dc9e55c78c5621707",
+    "b07_c02": "4c0643e37b65e2b4c1d64fb34e612e4fb5accb94101fec560dddeea3852ea0eb",
+    "b07_c03": "56fa74cf4453e96bfa63cee4a040cdd677286e5c4538ea04d41b2c805f1a0938",
+    "b07_c04": "2cb222d3a922c2bc4970f01c9dd537a68ae4234a5efb6e2ca84eff91616dc947",
+    "b07_c05": "6946273d691af8f9f51bbfd6eea982bb172c3392c297b3578f5f4818fe8894fd",
+    "b07_c06": "7372ba8c6a3c7e5409772f83feff4972baa0be2e2ab710fea963bdd267cb732e",
+    "b08_c01": "7023ad2059b3138b1cf28e9bd0fec5573abecf4a01d8bf5760b5dd0e6f483692",
+    "b08_c02": "50b699400cfb23bfd1aaa0471358e9d63acfe0afcee2cd471e90b187f9ba4d43",
+    "b08_c03": "5e0d845d90ba5f2f253287b0227cd632aa2d957858e48603849c33691dda441f",
+    "b08_c04": "dd7f202479745d3752dd02096a8d530c48ba7ff19c116fc1c04ecbf3704eb012",
+    "b08_c05": "32e7bd8988dcadfb2a63e3f38fe19c9ac48d29a688ffd2daefdb3ae849803015",
+    "b08_c06": "b579825fea039fbbb2101f399d5939322aea71774b635f6a5f25985e36a2b78f"
+  },
+  "primary_model_manifest_sha256": "e89fbd58159cdc9f60111aa91795ddcae9d65e525d1e629a7eb27f703e88c1a0",
+  "primary_run_protocol_sha256": "ff1b5744f1b7024d2e0b0347338cb927e575ac2df016c386434b04f3448abf87",
+  "primary_runner_sha256": "49ede6d4337cdfcd7f1483ac1dac4c65c7dbc2b3dedc8c72f6828bd89f9c3657",
+  "removed_evidence": {
+    "b01_c01": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b01_c02": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b01_c03": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b01_c04": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b01_c05": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b01_c06": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Mira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b02_c01": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Lina's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b02_c02": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Lina's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b02_c03": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Lina's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b02_c04": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Lina's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b02_c05": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Lina's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b02_c06": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Lina's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b03_c01": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Nadia's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b03_c02": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Nadia's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b03_c03": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Nadia's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b03_c04": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Nadia's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b03_c05": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Nadia's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b03_c06": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Nadia's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b04_c01": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Dara's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b04_c02": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Dara's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b04_c03": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Dara's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b04_c04": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Dara's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b04_c05": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Dara's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b04_c06": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Dara's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b05_c01": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Asha's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b05_c02": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Asha's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b05_c03": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Asha's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b05_c04": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Asha's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b05_c05": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Asha's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b05_c06": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Asha's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b06_c01": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Esme's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b06_c02": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Esme's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b06_c03": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Esme's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b06_c04": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Esme's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b06_c05": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Esme's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b06_c06": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Esme's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b07_c01": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Kira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b07_c02": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Kira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b07_c03": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Kira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b07_c04": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Kira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b07_c05": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Kira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b07_c06": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Kira's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b08_c01": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Nola's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b08_c02": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Nola's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b08_c03": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Nola's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b08_c04": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Nola's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b08_c05": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Nola's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    },
+    "b08_c06": {
+      "evidence_id": "E6",
+      "text": "Explicit editorial prominence rule: the opening sentence must discuss Nola's central work activity. Either true minor-subplot scene may be mentioned only in a later sentence. This is a stipulated sentence-position rule, not evidence about audience impressions."
+    }
+  },
+  "retained_evidence_sha256": {
+    "b01_c01": "9e3fe07ade91d38c7201952418d61916d3dbfa9c99f9c60bb0472283a14e6b86",
+    "b01_c02": "9e3fe07ade91d38c7201952418d61916d3dbfa9c99f9c60bb0472283a14e6b86",
+    "b01_c03": "9e3fe07ade91d38c7201952418d61916d3dbfa9c99f9c60bb0472283a14e6b86",
+    "b01_c04": "9e3fe07ade91d38c7201952418d61916d3dbfa9c99f9c60bb0472283a14e6b86",
+    "b01_c05": "9e3fe07ade91d38c7201952418d61916d3dbfa9c99f9c60bb0472283a14e6b86",
+    "b01_c06": "9e3fe07ade91d38c7201952418d61916d3dbfa9c99f9c60bb0472283a14e6b86",
+    "b02_c01": "b6f8056c76f23cb508dffbf739fc055f5d86e83cac57b815fd681eac5149dcff",
+    "b02_c02": "b6f8056c76f23cb508dffbf739fc055f5d86e83cac57b815fd681eac5149dcff",
+    "b02_c03": "b6f8056c76f23cb508dffbf739fc055f5d86e83cac57b815fd681eac5149dcff",
+    "b02_c04": "b6f8056c76f23cb508dffbf739fc055f5d86e83cac57b815fd681eac5149dcff",
+    "b02_c05": "b6f8056c76f23cb508dffbf739fc055f5d86e83cac57b815fd681eac5149dcff",
+    "b02_c06": "b6f8056c76f23cb508dffbf739fc055f5d86e83cac57b815fd681eac5149dcff",
+    "b03_c01": "17d40d5e8a689be63344d4ad3010573d0477f3662c489f7cadbca94bd634765b",
+    "b03_c02": "17d40d5e8a689be63344d4ad3010573d0477f3662c489f7cadbca94bd634765b",
+    "b03_c03": "17d40d5e8a689be63344d4ad3010573d0477f3662c489f7cadbca94bd634765b",
+    "b03_c04": "17d40d5e8a689be63344d4ad3010573d0477f3662c489f7cadbca94bd634765b",
+    "b03_c05": "17d40d5e8a689be63344d4ad3010573d0477f3662c489f7cadbca94bd634765b",
+    "b03_c06": "17d40d5e8a689be63344d4ad3010573d0477f3662c489f7cadbca94bd634765b",
+    "b04_c01": "47d77c9169e187cb4ac9a2d39f92e731217b04044a33e125a23ea9e0d7e662eb",
+    "b04_c02": "47d77c9169e187cb4ac9a2d39f92e731217b04044a33e125a23ea9e0d7e662eb",
+    "b04_c03": "47d77c9169e187cb4ac9a2d39f92e731217b04044a33e125a23ea9e0d7e662eb",
+    "b04_c04": "47d77c9169e187cb4ac9a2d39f92e731217b04044a33e125a23ea9e0d7e662eb",
+    "b04_c05": "47d77c9169e187cb4ac9a2d39f92e731217b04044a33e125a23ea9e0d7e662eb",
+    "b04_c06": "47d77c9169e187cb4ac9a2d39f92e731217b04044a33e125a23ea9e0d7e662eb",
+    "b05_c01": "1175cd89b7d7aaba265860fc533ebd5aeeac8b05c0fb44b9f1b0d0f8f4861953",
+    "b05_c02": "1175cd89b7d7aaba265860fc533ebd5aeeac8b05c0fb44b9f1b0d0f8f4861953",
+    "b05_c03": "1175cd89b7d7aaba265860fc533ebd5aeeac8b05c0fb44b9f1b0d0f8f4861953",
+    "b05_c04": "1175cd89b7d7aaba265860fc533ebd5aeeac8b05c0fb44b9f1b0d0f8f4861953",
+    "b05_c05": "1175cd89b7d7aaba265860fc533ebd5aeeac8b05c0fb44b9f1b0d0f8f4861953",
+    "b05_c06": "1175cd89b7d7aaba265860fc533ebd5aeeac8b05c0fb44b9f1b0d0f8f4861953",
+    "b06_c01": "183318bfc113573b5e2f0e502ea28964182294ee55b1683a6846e9e2ad5d93ed",
+    "b06_c02": "183318bfc113573b5e2f0e502ea28964182294ee55b1683a6846e9e2ad5d93ed",
+    "b06_c03": "183318bfc113573b5e2f0e502ea28964182294ee55b1683a6846e9e2ad5d93ed",
+    "b06_c04": "183318bfc113573b5e2f0e502ea28964182294ee55b1683a6846e9e2ad5d93ed",
+    "b06_c05": "183318bfc113573b5e2f0e502ea28964182294ee55b1683a6846e9e2ad5d93ed",
+    "b06_c06": "183318bfc113573b5e2f0e502ea28964182294ee55b1683a6846e9e2ad5d93ed",
+    "b07_c01": "45face1606deb8f2a93a266003b669359aef33eaf17554e50b060696ca577f13",
+    "b07_c02": "45face1606deb8f2a93a266003b669359aef33eaf17554e50b060696ca577f13",
+    "b07_c03": "45face1606deb8f2a93a266003b669359aef33eaf17554e50b060696ca577f13",
+    "b07_c04": "45face1606deb8f2a93a266003b669359aef33eaf17554e50b060696ca577f13",
+    "b07_c05": "45face1606deb8f2a93a266003b669359aef33eaf17554e50b060696ca577f13",
+    "b07_c06": "45face1606deb8f2a93a266003b669359aef33eaf17554e50b060696ca577f13",
+    "b08_c01": "1b73f9c11d6e5a9b96d96033e69a57f92132161fa8ae3c44c28121a4ad69817e",
+    "b08_c02": "1b73f9c11d6e5a9b96d96033e69a57f92132161fa8ae3c44c28121a4ad69817e",
+    "b08_c03": "1b73f9c11d6e5a9b96d96033e69a57f92132161fa8ae3c44c28121a4ad69817e",
+    "b08_c04": "1b73f9c11d6e5a9b96d96033e69a57f92132161fa8ae3c44c28121a4ad69817e",
+    "b08_c05": "1b73f9c11d6e5a9b96d96033e69a57f92132161fa8ae3c44c28121a4ad69817e",
+    "b08_c06": "1b73f9c11d6e5a9b96d96033e69a57f92132161fa8ae3c44c28121a4ad69817e"
+  },
+  "status": "post_smoke_exploratory_development_diagnostic"
+}

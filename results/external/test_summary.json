@@ -1,0 +1,134 @@
+[
+  {
+    "n": 100,
+    "n_valid": 50,
+    "n_invalid": 50,
+    "strict_accuracy": 0.74,
+    "invalid_accept_count": 23,
+    "invalid_accept_rate": 0.46,
+    "valid_reject_count": 3,
+    "valid_reject_rate": 0.06,
+    "malformed_count": 0,
+    "token_total_input": 107162,
+    "token_total_output": 600,
+    "seconds_total": 1066.5917,
+    "model": "${PROJECT_ROOT}/.cache/research-models/qwen3-8b",
+    "condition": "whole",
+    "split": "test",
+    "invalid_accept_CI": [
+      0.32,
+      0.6
+    ],
+    "valid_reject_CI": [
+      0.0,
+      0.14
+    ],
+    "correct_count": 74,
+    "accuracy_wilson_95": [
+      0.6462901055081282,
+      0.8159530153525186
+    ],
+    "invalid_accept_wilson_95": [
+      0.3296965219222435,
+      0.5960112860084253
+    ],
+    "valid_reject_wilson_95": [
+      0.02061497034897397,
+      0.16217091688838173
+    ],
+    "token_total": 107762,
+    "token_total_eos": 100,
+    "seconds_total_unrounded": 1066.5914166248403,
+    "finish_reason_counts": {
+      "stop": 100
+    }
+  },
+  {
+    "n": 100,
+    "n_valid": 50,
+    "n_invalid": 50,
+    "strict_accuracy": 0.75,
+    "invalid_accept_count": 22,
+    "invalid_accept_rate": 0.44,
+    "valid_reject_count": 3,
+    "valid_reject_rate": 0.06,
+    "malformed_count": 0,
+    "token_total_input": 121675,
+    "token_total_output": 600,
+    "seconds_total": 1194.9529,
+    "model": "${PROJECT_ROOT}/.cache/research-models/qwen3-8b",
+    "condition": "matched",
+    "split": "test",
+    "invalid_accept_CI": [
+      0.3,
+      0.58
+    ],
+    "valid_reject_CI": [
+      0.0,
+      0.14
+    ],
+    "correct_count": 75,
+    "accuracy_wilson_95": [
+      0.656955364519384,
+      0.8245478863771232
+    ],
+    "invalid_accept_wilson_95": [
+      0.3116219921125717,
+      0.5769397197834315
+    ],
+    "valid_reject_wilson_95": [
+      0.02061497034897397,
+      0.16217091688838173
+    ],
+    "token_total": 122275,
+    "token_total_eos": 100,
+    "seconds_total_unrounded": 1194.9526904625818,
+    "finish_reason_counts": {
+      "stop": 100
+    }
+  },
+  {
+    "n": 100,
+    "n_valid": 50,
+    "n_invalid": 50,
+    "strict_accuracy": 0.82,
+    "invalid_accept_count": 14,
+    "invalid_accept_rate": 0.28,
+    "valid_reject_count": 4,
+    "valid_reject_rate": 0.08,
+    "malformed_count": 0,
+    "token_total_input": 124375,
+    "token_total_output": 600,
+    "seconds_total": 1217.8211000000001,
+    "model": "${PROJECT_ROOT}/.cache/research-models/qwen3-8b",
+    "condition": "delta_prompt",
+    "split": "test",
+    "invalid_accept_CI": [
+      0.16,
+      0.4
+    ],
+    "valid_reject_CI": [
+      0.02,
+      0.16
+    ],
+    "correct_count": 82,
+    "accuracy_wilson_95": [
+      0.7333264161369926,
+      0.8829977450105364
+    ],
+    "invalid_accept_wilson_95": [
+      0.17474170665911232,
+      0.4166512369595657
+    ],
+    "valid_reject_wilson_95": [
+      0.03154951408859298,
+      0.18838246918342838
+    ],
+    "token_total": 124975,
+    "token_total_eos": 100,
+    "seconds_total_unrounded": 1217.8208405021578,
+    "finish_reason_counts": {
+      "stop": 100
+    }
+  }
+]

@@ -1,0 +1,329 @@
+{
+  "study": "SummEdits development comparison",
+  "split": "dev",
+  "n_cases": 40,
+  "label_counts": {
+    "valid": 20,
+    "invalid": 20
+  },
+  "labels": "Original dataset labels, unchanged; no flags used to rescore.",
+  "label_review": {
+    "status": "AI-assisted review requiring human confirmation",
+    "summary": {
+      "reviewed_case_count": 40,
+      "flagged_case_count": 7,
+      "flag_count": 7,
+      "unchanged_original_label_counts": {
+        "0": 20,
+        "1": 20
+      },
+      "human_confirmation": "Pending for every flagged case; no adjudicated error count is asserted."
+    },
+    "affects_scores": false
+  },
+  "conditions": [
+    {
+      "condition": "whole",
+      "split": "dev",
+      "n": 40,
+      "n_valid": 20,
+      "n_invalid": 20,
+      "correct": 28,
+      "strict_accuracy": 0.7,
+      "accuracy_wilson_95": [
+        0.5456998118185507,
+        0.8192515477025347
+      ],
+      "invalid_accept_count": 12,
+      "invalid_accept_rate": 0.6,
+      "invalid_accept_wilson_95": [
+        0.3865815007622531,
+        0.781193467627183
+      ],
+      "valid_reject_count": 0,
+      "valid_reject_rate": 0.0,
+      "valid_reject_wilson_95": [
+        0.0,
+        0.16112515805281938
+      ],
+      "malformed_count": 0,
+      "length_terminated_calls": 0,
+      "model_calls": 40,
+      "usage_complete": true,
+      "incomplete_calls": 0,
+      "token_total_input": 39687,
+      "token_total_output": 240,
+      "token_total_eos": 40,
+      "token_total": 39927,
+      "known_tokens_lower_bound": 39927,
+      "token_total_including_eos": 39967,
+      "seconds_total": 323.8309,
+      "seconds_total_unrounded": 323.8308693715371,
+      "known_generation_seconds_lower_bound": 323.8308693715371,
+      "failed_attempt_elapsed_seconds": 0,
+      "model": "${PROJECT_ROOT}/.cache/research-models/qwen3-8b"
+    },
+    {
+      "condition": "matched",
+      "split": "dev",
+      "n": 40,
+      "n_valid": 20,
+      "n_invalid": 20,
+      "correct": 27,
+      "strict_accuracy": 0.675,
+      "accuracy_wilson_95": [
+        0.5201774618987768,
+        0.799154977682173
+      ],
+      "invalid_accept_count": 13,
+      "invalid_accept_rate": 0.65,
+      "invalid_accept_wilson_95": [
+        0.43285427668523624,
+        0.818808175898918
+      ],
+      "valid_reject_count": 0,
+      "valid_reject_rate": 0.0,
+      "valid_reject_wilson_95": [
+        0.0,
+        0.16112515805281938
+      ],
+      "malformed_count": 0,
+      "length_terminated_calls": 0,
+      "model_calls": 40,
+      "usage_complete": true,
+      "incomplete_calls": 0,
+      "token_total_input": 45174,
+      "token_total_output": 240,
+      "token_total_eos": 40,
+      "token_total": 45414,
+      "known_tokens_lower_bound": 45414,
+      "token_total_including_eos": 45454,
+      "seconds_total": 368.4855,
+      "seconds_total_unrounded": 368.4854407925159,
+      "known_generation_seconds_lower_bound": 368.4854407925159,
+      "failed_attempt_elapsed_seconds": 0,
+      "model": "${PROJECT_ROOT}/.cache/research-models/qwen3-8b"
+    },
+    {
+      "condition": "delta_prompt",
+      "split": "dev",
+      "n": 40,
+      "n_valid": 20,
+      "n_invalid": 20,
+      "correct": 31,
+      "strict_accuracy": 0.775,
+      "accuracy_wilson_95": [
+        0.6249690325768998,
+        0.8768390867645927
+      ],
+      "invalid_accept_count": 9,
+      "invalid_accept_rate": 0.45,
+      "invalid_accept_wilson_95": [
+        0.2581978582556243,
+        0.6579146575496577
+      ],
+      "valid_reject_count": 0,
+      "valid_reject_rate": 0.0,
+      "valid_reject_wilson_95": [
+        0.0,
+        0.16112515805281938
+      ],
+      "malformed_count": 0,
+      "length_terminated_calls": 0,
+      "model_calls": 40,
+      "usage_complete": true,
+      "incomplete_calls": 0,
+      "token_total_input": 46254,
+      "token_total_output": 240,
+      "token_total_eos": 40,
+      "token_total": 46494,
+      "known_tokens_lower_bound": 46494,
+      "token_total_including_eos": 46534,
+      "seconds_total": 375.3027,
+      "seconds_total_unrounded": 375.30245991190895,
+      "known_generation_seconds_lower_bound": 375.30245991190895,
+      "failed_attempt_elapsed_seconds": 0,
+      "model": "${PROJECT_ROOT}/.cache/research-models/qwen3-8b"
+    },
+    {
+      "condition": "delta_claims_v1",
+      "split": "dev",
+      "n": 40,
+      "n_valid": 20,
+      "n_invalid": 20,
+      "correct": 31,
+      "strict_accuracy": 0.775,
+      "accuracy_wilson_95": [
+        0.6249690325768998,
+        0.8768390867645927
+      ],
+      "invalid_accept_count": 9,
+      "invalid_accept_rate": 0.45,
+      "invalid_accept_wilson_95": [
+        0.2581978582556243,
+        0.6579146575496577
+      ],
+      "valid_reject_count": 0,
+      "valid_reject_rate": 0.0,
+      "valid_reject_wilson_95": [
+        0.0,
+        0.16112515805281938
+      ],
+      "malformed_count": 0,
+      "length_terminated_calls": 0,
+      "model_calls": 80,
+      "usage_complete": true,
+      "incomplete_calls": 0,
+      "token_total_input": 68813,
+      "token_total_output": 6182,
+      "token_total_eos": 80,
+      "token_total": 74995,
+      "known_tokens_lower_bound": 74995,
+      "token_total_including_eos": 75075,
+      "seconds_total": 1026.3872000000001,
+      "seconds_total_unrounded": 1026.3874738388695,
+      "known_generation_seconds_lower_bound": 1026.3874738388695,
+      "failed_attempt_elapsed_seconds": 0,
+      "model": "${PROJECT_ROOT}/.cache/research-models/qwen3-8b"
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "baseline": "whole",
+      "new_condition": "delta_claims_v1",
+      "disagreement_count": 5,
+      "fixed_count": 4,
+      "regressed_count": 1,
+      "disagreements": [
+        {
+          "case_id": "63f9455b8d931ba6e664fb90_8",
+          "label": 0,
+          "baseline": "yes",
+          "delta_claims_v1": "no",
+          "change": "fixed"
+        },
+        {
+          "case_id": "rklVOnNtwH_28",
+          "label": 0,
+          "baseline": "no",
+          "delta_claims_v1": "yes",
+          "change": "regressed"
+        },
+        {
+          "case_id": "samsum_train_13828754_22",
+          "label": 0,
+          "baseline": "yes",
+          "delta_claims_v1": "no",
+          "change": "fixed"
+        },
+        {
+          "case_id": "billsum_train_8220_19",
+          "label": 0,
+          "baseline": "yes",
+          "delta_claims_v1": "no",
+          "change": "fixed"
+        },
+        {
+          "case_id": "ectsum_MTB_q3_2021_8",
+          "label": 0,
+          "baseline": "yes",
+          "delta_claims_v1": "no",
+          "change": "fixed"
+        }
+      ]
+    },
+    {
+      "baseline": "matched",
+      "new_condition": "delta_claims_v1",
+      "disagreement_count": 6,
+      "fixed_count": 5,
+      "regressed_count": 1,
+      "disagreements": [
+        {
+          "case_id": "63f9455b8d931ba6e664fb90_8",
+          "label": 0,
+          "baseline": "yes",
+          "delta_claims_v1": "no",
+          "change": "fixed"
+        },
+        {
+          "case_id": "rklVOnNtwH_28",
+          "label": 0,
+          "baseline": "no",
+          "delta_claims_v1": "yes",
+          "change": "regressed"
+        },
+        {
+          "case_id": "samsum_train_13828754_22",
+          "label": 0,
+          "baseline": "yes",
+          "delta_claims_v1": "no",
+          "change": "fixed"
+        },
+        {
+          "case_id": "billsum_train_8220_19",
+          "label": 0,
+          "baseline": "yes",
+          "delta_claims_v1": "no",
+          "change": "fixed"
+        },
+        {
+          "case_id": "ectsum_MTB_q3_2021_8",
+          "label": 0,
+          "baseline": "yes",
+          "delta_claims_v1": "no",
+          "change": "fixed"
+        },
+        {
+          "case_id": "sales_call_13_13",
+          "label": 0,
+          "baseline": "yes",
+          "delta_claims_v1": "no",
+          "change": "fixed"
+        }
+      ]
+    },
+    {
+      "baseline": "delta_prompt",
+      "new_condition": "delta_claims_v1",
+      "disagreement_count": 2,
+      "fixed_count": 1,
+      "regressed_count": 1,
+      "disagreements": [
+        {
+          "case_id": "rklVOnNtwH_28",
+          "label": 0,
+          "baseline": "no",
+          "delta_claims_v1": "yes",
+          "change": "regressed"
+        },
+        {
+          "case_id": "billsum_train_8220_19",
+          "label": 0,
+          "baseline": "yes",
+          "delta_claims_v1": "no",
+          "change": "fixed"
+        }
+      ]
+    }
+  ],
+  "interpretation": "Exploratory development results after inspecting earlier development errors; not held-out evidence.",
+  "scoring": "Strict accuracy gives no correctness credit to a malformed pipeline. Operational rejection includes malformed cases; semantic verdict is recorded separately.",
+  "token_definition": "token_total = input + output excluding EOS; token_total_including_eos also reports stopping EOS tokens.",
+  "timing_definition": "Sum of stream_generation_only elapsed seconds across all calls, including both new stages. Excludes model loading, file I/O and analysis. Baselines were cached in previous sessions; these are observed costs, not controlled speed benchmarks.",
+  "provenance": {
+    "dev_sha256": "14b827531a401698aa15e774fa41185a3efe49a7ef084c60892eac694fbac361",
+    "baseline_predictions_sha256": "98e2c2707cdcf592c51e207fa82d4f813667d6e952edb1a69d5c49ca4c01bf5c",
+    "baseline_summary_sha256": "6db0b6dfea01223a43a133089f704ae7286d9db9ab7fd1fcdc698ca375c56261",
+    "new_predictions_sha256": "79aa5db86a97e2dfb4d886cc2f3aaa0c2f6a1aa6fb5fadfe264bc95e82ce6354",
+    "analyzer_sha256": "089b3d2a75818ddc32e7a970ac8dbe221830fab588b13ce7a17900f66a3eaff5",
+    "test_split_accessed_by_analyzer": false
+  },
+  "files": {
+    "predictions": "${RESEARCH_KIT}/results/delta_claims_v1_dev/predictions.jsonl",
+    "calls": "${RESEARCH_KIT}/results/delta_claims_v1_dev/calls.jsonl",
+    "all_examples": "${PROJECT_ROOT}/results/delta_claims_v1_dev/per_example.json",
+    "disagreements": "${PROJECT_ROOT}/results/delta_claims_v1_dev/disagreements.json",
+    "questionable_labels": "${PROJECT_ROOT}/results/delta_claims_v1_dev/questionable_labels.json"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "controlled-editing-verification-v1",
+  "dataset_id": "1ac537174889b4ee5c5a",
+  "status": "construction_checks_passed_not_semantic_human_validation",
+  "worlds": 24,
+  "candidates": 144,
+  "development_candidates": 48,
+  "evaluation_candidates": 96,
+  "families": 6,
+  "evaluation_families": 4,
+  "identical_fragment_role_pairs": 24,
+  "stress_metadata_rows": 48,
+  "human_labels": 0,
+  "files": {
+    "worlds.jsonl": {
+      "sha256": "59ba0485496381fd3194edb93603b0d058392ffb0fba4f3ebde88b6a4f7bb833",
+      "rows": 24
+    },
+    "tasks.jsonl": {
+      "sha256": "c27b5545a4815eff96f6a8b86aea42dc1f68cda9fa1230b42462d105dac94034",
+      "rows": 144
+    },
+    "gold.jsonl": {
+      "sha256": "fdd5106022ac9b4e7447713df325c254e0134d18598395ef92a460f099281bc8",
+      "rows": 144
+    },
+    "stress_spans.jsonl": {
+      "sha256": "85e7d528b03e02d07f75c4336d9e0be046620c1bd3850a85438cfe9af2bb96d6",
+      "rows": 48
+    }
+  },
+  "smoke_case_ids": [
+    "b01_c01",
+    "b01_c02",
+    "b01_c03",
+    "b01_c04",
+    "b01_c05",
+    "b01_c06"
+  ],
+  "split_rule": "First two of six fixed contextual template families are development; last four evaluation.",
+  "source_status": "Entirely fictitious and constructed; no corpus or real movie sampling.",
+  "primary_span_rule": "Meaningful prepositional phrase or complete sentence; stress spans excluded.",
+  "prominence_endpoint": "Compliance with declared first-sentence editorial rule; not actual viewer expectations.",
+  "prespecified_primary_conditions": [
+    "replacement_factual",
+    "whole_factual",
+    "whole_factual_prominence"
+  ],
+  "primary_calls_per_model": 432,
+  "independent_source_review": false,
+  "human_identity_claim": false,
+  "generator_instruction": "Never supply worlds, gold, stress metadata, case IDs, split, or construction names to verifier.",
+  "script_sha256": "127ee1a6ce3cdc1837f5826f4e0e7e6ff0e476cf90781677e3b431ba92e3248f"
+}

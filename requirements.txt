@@ -1,0 +1,2 @@
+# CPU replay and validation require only the Python 3.10+ standard library.
+# No packages to install. Optional downloads/inference have separate manifests.

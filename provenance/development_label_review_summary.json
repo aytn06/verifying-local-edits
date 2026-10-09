@@ -1,0 +1,8 @@
+{
+  "affects_scores": false,
+  "reviewed_cases": 40,
+  "flagged_cases": 7,
+  "all_original_labels_unchanged": true,
+  "status": "AI-assisted flags, pending human confirmation; no adjudicated count or corrected scores",
+  "original_sidecar_sha256": "15279a4b8d55e16f2fbf9ca47d7a932e37ebbf82f48fd1eb02fed174691c14d2"
+}

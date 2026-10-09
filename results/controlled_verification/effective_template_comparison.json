@@ -1,0 +1,16 @@
+{
+  "scope": "CPU-only comparison; no 1.7B generation yet",
+  "common_messages": 432,
+  "identical_messages": 432,
+  "identical_effective_input_token_ids": 432,
+  "qwen3_8b_manual_prefills": 0,
+  "qwen3_17b_manual_prefills": 432,
+  "qwen3_8b_flag_changes_render": 432,
+  "qwen3_17b_flag_changes_render": 0,
+  "all_verified_effective_empty_thought_prefix": true,
+  "rendered_input_manifest_sha256": {
+    "qwen3_8b": "e2e0765bfa5d207bfee1bcc5d1a4f7ba7240509cba37a7998fe0abeed828f0af",
+    "qwen3_17b": "2f81dfdf71cc67ff5a41fb8a455e1fc747963f6ce57557d5938df537f44f9b44"
+  },
+  "limitation": "matching input IDs and explicit prompt prefill do not guarantee no emitted reasoning or cross-hardware deterministic outputs"
+}

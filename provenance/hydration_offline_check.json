@@ -1,0 +1,6 @@
+{
+  "prepared_cases": 140,
+  "exact_original_file_hashes_verified": 3,
+  "request_message_and_render_hashes_verified": 420,
+  "scope": "Offline adapter check from reconstructed original normalized records; upstream full-file download was not executed."
+}

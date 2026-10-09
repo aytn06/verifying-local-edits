@@ -1,0 +1,19 @@
+{
+  "case_ids": [
+    "b05_c05",
+    "b05_c06",
+    "b06_c01",
+    "b06_c02"
+  ],
+  "scope": "batch_generation_only_not_serving_latency",
+  "stats": {
+    "decode_time": 0.5714901266619563,
+    "generation_steps": 7,
+    "generation_tokens": 28,
+    "peak_memory": 5.216504104,
+    "prompt_time": 10.61620070785284,
+    "prompt_tokens": 1624,
+    "wall_time": 11.263090750202537
+  },
+  "wall_seconds": 11.29785320814699
+}
