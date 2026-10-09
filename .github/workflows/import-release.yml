@@ -1,0 +1,68 @@
+name: Import verified research release
+
+on:
+  workflow_dispatch:
+    inputs:
+      archive_sha256:
+        description: SHA-256 of the maintainer-uploaded github_release.zip
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    if: github.repository == 'aytn06/verifying-local-edits' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - name: Verify and unpack the prepared public release
+        env:
+          EXPECTED_SHA256: ${{ inputs.archive_sha256 }}
+        run: |
+          python3 - <<'PY'
+          import hashlib, os, pathlib, re, shutil, stat, tempfile, zipfile
+          archive = pathlib.Path('github_release.zip')
+          expected = os.environ['EXPECTED_SHA256'].lower()
+          assert re.fullmatch(r'[0-9a-f]{64}', expected), 'Invalid SHA-256'
+          assert hashlib.sha256(archive.read_bytes()).hexdigest() == expected, 'Archive checksum mismatch'
+          with tempfile.TemporaryDirectory() as staging:
+              root = pathlib.Path(staging)
+              with zipfile.ZipFile(archive) as bundle:
+                  assert sum(i.file_size for i in bundle.infolist()) < 100_000_000
+                  seen = set()
+                  for item in bundle.infolist():
+                      p = pathlib.PurePosixPath(item.filename)
+                      assert not p.is_absolute() and '..' not in p.parts
+                      assert p.parts[0] == 'verifying-local-edits'
+                      assert '.git' not in p.parts and not stat.S_ISLNK(item.external_attr >> 16)
+                      assert item.filename not in seen
+                      seen.add(item.filename)
+                  bundle.extractall(root)
+              public = root / 'verifying-local-edits'
+              workflow = pathlib.Path('.github/workflows/import-release.yml')
+              assert (public / workflow).read_bytes() == workflow.read_bytes(), 'Workflow differs from reviewed import'
+              for source in public.rglob('*'):
+                  if source.is_file():
+                      destination = pathlib.Path(source.relative_to(public))
+                      destination.parent.mkdir(parents=True, exist_ok=True)
+                      shutil.copy2(source, destination)
+          archive.unlink()
+          PY
+      - name: Validate frozen results without inference
+        run: |
+          python3 scripts/reproduce_tables.py
+          python3 scripts/validate_release.py
+          python3 -m unittest discover -s tests -v
+          python3 checklist_replication/scripts/reproduce.py --split all
+          python3 checklist_replication/scripts/validate.py
+      - name: Commit the verified public files
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m 'Publish verified paper and reproducibility package'
+          git push origin HEAD:main
